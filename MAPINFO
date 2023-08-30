@@ -1,0 +1,10 @@
+DoomEdNums
+{
+	20000 = "PDAReader"
+}
+
+Gameinfo
+{
+	AddEventHandlers = "PDAEventHandler"
+	Playerclasses = "TheLostMarine", "DoomPlayer"
+}

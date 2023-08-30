@@ -1,0 +1,12 @@
+version "4.1.0"
+
+#include "ZScripts/PDAZForms/Include.zsc"
+#include "ZScripts/PDAMenuElements.zc"
+#include "ZScripts/PDAMenu.zc"
+#include "ZScripts/PDAConfig.zc"
+#include "ZScripts/PDAMenuHandler.zc"
+#include "ZScripts/PDAEventHandler.zc"
+#include "ZScripts/PDAReader.zc"
+#include "ZScripts/PDAReaderTutorialMenu.zc"
+#include "ZScripts/PDA.zc"
+#include "ZScripts/PDADummyPDA.zc"

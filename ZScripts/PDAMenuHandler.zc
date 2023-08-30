@@ -1,0 +1,103 @@
+/****************************************************************************
+
+MIT License
+
+Copyright (c) 2019 - 2021 Nash Muhandes
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+****************************************************************************/
+
+//===========================================================================
+//
+// PDAMenuHandler
+// Handles PDA button clicks
+//
+//===========================================================================
+
+class PDAMenuHandler : PDAHandler
+{
+	PDAMenu menu;
+
+	override void ButtonClickCommand(PDAButton caller, String command)
+	{
+		if (!menu) return;
+		if (!menu.pdaContentText || !menu.pdaContentBackground) return;
+
+		// Parse the command
+		Array<String> strings;
+		strings.Clear();
+		command.Split(strings, ":");
+
+		// Return if the array has less than 2 strings
+		if (strings.Size() < 2) return;
+
+		if ((strings[0] ~== "ActivatePDA"))
+		{
+			// Play activate sound
+			Menu.MenuSound("PDA/Interface/Activate");
+
+			// Mark as read
+			let pda = PDA(menu.pmo.FindInventory(strings[1], true));
+			if (pda)
+			{
+				EventHandler.SendNetworkEvent("EV_MarkPDARead:" .. strings[1]);
+			}
+
+			class<PDA> cls = strings[1];
+			String txt = GetDefaultByType((class<PDA>)(cls)).pdaText;
+			String pdaText = StringTable.Localize(txt);
+
+			// Update content image and text
+			menu.pdaContentBackground.image = GetDefaultByType((class<PDA>)(cls)).pdaImage;
+			menu.pdaContentText.SetText(pdaText);
+
+			// Update current selection
+			int index = menu.pdaList.items.Find(PDAColoredButton(caller));
+			menu.pdaList.currentSelection = index;
+			menu.pdaList.UpdateSelection();
+
+			// Play sound if available
+			Sound snd = GetDefaultByType((class<PDA>)(cls)).pdaAudio;
+			if (snd)
+			{
+				// Find the PDA reader and play the sound from it (lol hack)
+				let pdaReader = menu.pmo.FindInventory("PDAReader", true);
+				if (pdaReader && menu.pmo == players[consoleplayer].mo)
+				{
+					pdaReader.A_StartSound(snd, CHAN_VOICE, CHANF_UI, snd_menuvolume, ATTN_NONE);
+				}
+			}
+			else
+			{
+				// Stop all sounds when clicking on a soundless PDA
+				EventHandler.SendNetworkEvent("EV_StopPDASound");
+			}
+		}
+	}
+
+	override void ElementHoverChanged(PDAElement caller, string command, bool unhovered)
+	{
+		if (!unhovered && !caller.disabled)
+		{
+			Menu.MenuSound("PDA/Interface/Hover");
+		}
+		Super.ElementHoverChanged(caller, command, unhovered);
+	}
+}

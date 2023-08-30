@@ -1,0 +1,4 @@
+#Include "Decorate/Player/Player.dec"
+#Include "Decorate/Weapons/Weapons.dec"
+
+#Include "PDAs/PDAs.dec"

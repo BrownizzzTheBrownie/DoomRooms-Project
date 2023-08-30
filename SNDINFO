@@ -1,0 +1,28 @@
+//===========================================================================
+//
+// PDA INTERFACE SOUNDS
+//
+//===========================================================================
+
+PDA/Interface/Menu_Open "Sounds/PDA/pda_open.ogg"
+PDA/Interface/Menu_Close "Sounds/PDA/pda_close.ogg"
+PDA/Interface/Hover "Sounds/PDA/pda_hover.ogg"
+PDA/Interface/Activate "Sounds/PDA/pda_activate.ogg"
+
+//============================================================================
+//
+// Weapons Sounds
+//
+//============================================================================
+
+//$random HCFire { HCFire1 HCFire2 HCFire3 }
+HCFire1 92FT
+HCFire2 92FU
+HCFire2 92FS
+
+swatshotgun/Fire	SWATFIR
+swatshotgun/Reload	SWATREL
+
+weapons/minigunfire DSMINIGN
+
+magsixty/fire magfire1

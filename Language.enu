@@ -1,0 +1,128 @@
+[enu default]
+
+//==============================================================================
+//
+//
+//
+//==============================================================================
+
+PDA_STARTER_KIT_VERSION = "1.1"
+
+PDA_READER = "PDA Reader";
+PDA_PICKUP = "New Case: %s";
+PDA_DEFAULT_TITLE = "[Untitled PDA]";
+PDA_EMPTY = "-EMPTY-";
+
+//==============================================================================
+//
+// PDA Reader
+//
+//==============================================================================
+
+PDA_READER_PICKUP = "Picked up a PDA reader.";
+PDA_READER_TUTORIAL = "You picked up a PDA reader! Select it from your inventory bar and press %s to activate it.";
+
+//==============================================================================
+//
+// Creepy Note
+//
+//==============================================================================
+
+PDA_CNote_Title = "Creepy Note";
+PDA_CNote_Text =
+	"'If you're not careful and you noclip out of reality in the wrong areas you'll end up in the Backrooms, where it's nothing but the stink of old moist carpet, the madness of mono-yellow, the endless background noise of fluorescent lights at maximum hum-buzz, and approximately six hundred million square miles of randomly segmented empty rooms to be trapped in."
+	"\n\n"
+	"God save you if you hear something wandering around nearby, because it sure as hell has heard you...'";
+	
+//==============================================================================
+//
+// Basics of the Backrooms; A Guide
+//
+//==============================================================================
+
+PDA_BackroomsBasics_Title = "Basics of the Backrooms; A Guide"
+PDA_BackroomsBasics_Text =
+	"The Backrooms is a large space outside of known reality. Time doesn't work the same, and there are dangerous entities lurking in the shadows. This guide is to help newcomers prepare physically and mentally for the Backrooms. So read up, because there have been no documented escapes."
+	"\n\n"
+	"How To get there: To get to the Backrooms, you must 'No-Clip' out of reality. There isn't a for-sure way to do this, as it seemingly happens at random times. There are some tips to increase your chances fo getting there, though. One way is to find a potential entrance; there are common places where entrances can be found, such as:"
+	"\n\n"
+	"- Walls that are a shade darker in abandoned buildings"
+	"\n\n"
+	"- Doors that look like they shouldn't lead anywhere or are in a random place"
+	"\n\n"
+	"Any area that gives paranormal feelings (hair standing up, buzzing, electric currents, sense of unease)"
+	"\n\n"
+	"- Missing the last step on a flight of stairs and falling on your face. (This usually does not work, only in very select flights of stairs, the anomalous properties of said stairs disappear/move after 2 or so entries using this method.)"
+	"\n\n"
+	"- Interacting with a corrupted object, such as a glitched chair."
+	"\n\n"
+	"If you find a place that looks like an entrance, make sure you're prepared, and then simply try to walk through"
+
+//==============================================================================
+//
+// Level 0
+//
+//==============================================================================
+
+PDA_Level0_Title = "Level 0";
+PDA_Level0_Text = 
+	"SURVIVAL DIFFICULTY:"
+	"\n"
+	"Class 1"
+	"\n"
+	"- Safe"
+	"\n"
+	"- Secure"
+	"\n"
+	"- Minimal Entity Count"
+	"\n\n"
+	"Level 0 is the 1st level of the Backrooms, and the fist level many encounter."
+	"\n\n"
+	"Description:"
+	"\n"
+	"Level 0 is a non-linear space, resembling the back rooms of a retail outlet. Similar to its previous form, all rooms in Level 0 appear uniform and share superficial features such as yellowed wallpaper, damp carpet, and inconsistently placed fluorescent lighting. However, no two rooms within the level are identical."
+	"\n"
+	"The installed lighthing flickers inconsistently and hums at a constant frequency. This buzzing is notably louder and more obtrusive than ordinary flourescent humming, and examination of the fixtures to determine the source has been inconclusive. The substance saturating the carpet cannot be consistently identified. It is not water, nor is it safe to consume.(Traces of pleural fluid have been found in the analysis.)"
+	"\n\n"
+	"Linear space in Level 0 is altered drastically; it is possible to walk in a straight line and return to the starting point, and retracing your steps will result in a different set of rooms, consistent navigation is extremely difficult. Devices such as compasses and GPS locators fail to function within the level, and radio communications are distorted and unreliable."
+	"\n\n"
+	"Level 0 is entirely still and devpid of life. Despite the fact that is the primary entrance to the Backrooms, contact with other wanderers within the level has never been reported. Presumably, a great number of poeple have died before exiting, the most likely causes being dehydration, starvation, and psychological hypothetical deaths. Attempting to enter Level 0 in a group will result in the separtion of group until the level is exited."
+	"\n\n"
+	"Rooms with 'red wallpaper and dim lighting' appear very rarely. These should not be approached or entered."
+	"\n\n"
+	"hallucinations are common in Level, the most common being:"
+	"\n\n"
+	"- Humming from the lighting increasing to a deafening volume then abruptly silencing."
+	"\n"
+	"- The appearance of doors."
+	"\n"
+	"- The appearance of stairs."
+	"\n"
+	"- Human-like speech resembling no known language."
+	"\n"
+	"- Movement in peripheral vision resembling insects crawling underneath the wallpaper, which desappears once the wall is observed directly."
+	"\n"
+	"- Insect-like chittering."
+	"\n\n"
+	"According to analysis, the CO² levels within Level 0 are rising at a steady rate. The significance of this is unknown."
+	"\n\n"
+	"Entities:"
+	"\n\n"
+	"No entities are known to exist within the level, including other humans. If you see, hear, or encounter what you believe to be another wanderer, it is not a human."
+	"\n\n"
+	"Entrances And Exits:"
+	"\n\n"
+	"Entrances"
+	"\n\n"
+	"Accidental no-clipping out of the bounds of the most consistent way of accesing Level 0, and, by extension, The Backrooms. See the 'Basics of the Backrooms' guide for more information."
+	"\n\n"
+	"The fortresses of Level 283 rarely contain wooden doors that smell of mold; entering these doors will lead to Level 0."
+	"\n\n"
+	"Exits"
+	"\n\n"
+	"Exiting Level 0 is only possible by noclipping, which will always result in entry to Level 1. As newxomers to Level 0 are often unfamiliar with the mechanics of the Backrooms it is necessary to keep your bearings and adapt quickly to the environment in oreder to exit."
+	"\n\n"
+	"Entrance to the Manila Room is rare but possible by walking a great distance in any direction. Unlike Level 0, wanderers can meet freely in the Manila Room, but the room is a dead end. Rather, it functions as a rendez-vous room for wanderers who survive the trek."
+	"\n\n"
+	"Additionally, documentation from the M.E.G. can be found in the Manila Room, assisting newcomers in survival and escape, Instruction on how to noclip can be found in [DATA MISSING].";
+	

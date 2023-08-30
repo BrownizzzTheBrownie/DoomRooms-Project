@@ -1,0 +1,11 @@
+//Slot1
+
+//Slot2
+#Include "Decorate/Weapons/Pistol/HandCannon.dec"
+#Include "Decorate/Weapons/Pistol/Mag60.dec"
+
+//Slot3
+#Include "Decorate/Weapons/Shotgun/SwatShotgun.dec"
+
+//Slot4
+#Include "Decorate/Weapons/Minigun/Minigun.dec"

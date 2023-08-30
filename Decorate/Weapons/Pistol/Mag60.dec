@@ -1,0 +1,45 @@
+actor Mag60 : Weapon //replaces Pistol
+{
+
+	Weapon.AmmoType "Clip"
+	Weapon.AmmoUse 1
+	Weapon.SlotNumber 2
+	Inventory.PickupMessage "You got the Mag .60 Pistol(This is just a burst pistol)."
+	
+	States
+	{
+	
+			Ready:
+				VUPG A 1 A_WeaponReady
+				Loop
+				
+			Select:
+				VUPG A 1 A_Raise
+				Loop
+				
+			Deselect:
+				VUPG A 1 A_Lower
+				Loop
+				
+			Fire:
+				VUPG B 1 BRIGHT A_PlayWeaponSound("magsixty/fire")
+				VUPF A 1 BRIGHT A_FireBullets(4.5,5.5,1,7,"BulletPuff")
+				VUPG CDC 1
+				VUPG B 1 BRIGHT A_PlayWeaponSound("magsixty/fire")
+				VUPF A 1 BRIGHT A_FireBullets(4.5,5.5,1,7,"BulletPuff")
+				VUPG CDC 1
+				VUPG B 1 BRIGHT A_PlayWeaponSound("magsixty/fire")
+				VUPF A 1 BRIGHT A_FireBullets(4.5,5.5,1,7,"BulletPuff")
+				VUPG C 0 A_PlaySoundEX("magsixty/slide","soundslot6")
+				VUPG CDC 1
+				VUPG A 10
+				VUPG A 1 A_ReFire
+				Goto Ready
+				
+			Spawn:
+				VUPP A -1
+				Stop
+	
+	}
+
+}

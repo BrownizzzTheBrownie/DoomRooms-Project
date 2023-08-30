@@ -1,0 +1,50 @@
+//===========================================================================
+//
+// Example PDAs in DECORATE format.
+//
+//===========================================================================
+
+ACTOR CreepyNote : PDA
+{
+	Tag "$PDA_CNote_Title"
+	PDA.Text "$PDA_CNote_Text"
+
+	States
+	{
+		Spawn:
+			NOTE A -1
+			Stop
+	}
+}
+
+ACTOR Level0Case : PDA
+{
+	Tag "$PDA_Level0_Title"
+	PDA.Text "$PDA_Level0_Text"
+	//PDA.Image "Graphics/PDA/Images/lvl0.png"
+	PDA.Image "Graphics/PDA/Images/lvl0P.png"
+
+	States
+	{
+		Spawn:
+			NOTE A -1
+			Stop
+	}
+}
+
+ACTOR BackroomsBasics : PDA
+{
+
+	Tag "$PDA_BackroomsBasics_Title"
+	PDA.text "$PDA_BackroomsBasics_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+
+}
