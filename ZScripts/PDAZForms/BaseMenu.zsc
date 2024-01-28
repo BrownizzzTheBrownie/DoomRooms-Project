@@ -1,6 +1,7 @@
 /// The base menu class for menus to inherit from.
 /// Contains a mainFrame to put items in.
-class PDAGenericMenu : GenericMenu {
+class PDAGenericMenu : GenericMenu 
+{
 	PDAFrame mainFrame;
 	int mouseX;
 	int mouseY;

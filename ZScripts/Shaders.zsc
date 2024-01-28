@@ -1,0 +1,9 @@
+Class ShaderHudHandler : EventHandler
+{
+    override void RenderOverlay(RenderEvent e)
+    {
+        //PlayerInfo p = players[consoleplayer];
+        PPShader.SetEnabled("crt", true);
+        PPShader.SetUniform1f("crt", "timer", gametic);
+    }
+}

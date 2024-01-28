@@ -1,0 +1,36 @@
+user bool LR_lowhealth = true;
+user bool LR_invul = true;
+
+user float cl_leanangle = 22.5;
+user bool cl_strafelean = false;
+
+
+//Flashlight+
+
+user color cl_flashlight_plus_color = "7F 7F 7F";
+user int cl_flashlight_plus_intensity = 256;
+
+user float cl_flashlight_plus_inner = 25.0;
+user float cl_flashlight_plus_outer = 50.0;
+
+user bool cl_flashlight_plus_second_beam = true;
+
+user float cl_flashlight_plus_color_2_mult = 1.0;
+
+user int cl_flashlight_plus_intensity_2 = 512;
+
+user float cl_flashlight_plus_inner_2 = 8.0;
+user float cl_flashlight_plus_outer_2 = 16.0;
+
+user int cl_flashlight_plus_location = 0;
+
+//Flashlight++
+
+user int cl_flashlight_plus_plus_sound = 0;
+user bool cl_flashlight_plus_plus_playsound = true;
+
+user int cl_flashlight_plus_plus_custpos_x = 0;
+user int cl_flashlight_plus_plus_custpos_y = 0;
+user int cl_flashlight_plus_plus_custpos_z = 0;
+
+user bool cl_flashlight_plus_plus_alertmonsters = true;
