@@ -6,5 +6,8 @@ DoomEdNums
 Gameinfo
 {
 	AddEventHandlers = "PDAEventHandler"
-	Playerclasses = "TheLostMarine", "DoomPlayer"
+	AddEventHandlers = "ShaderHUDHandler"
+	AddEventHandlers = "LeaningHandler"
+	AddEventHandlers = "FlashLightPlusHandler"
+	Playerclasses = "B-TechMarine", "DoomPlayer"
 }

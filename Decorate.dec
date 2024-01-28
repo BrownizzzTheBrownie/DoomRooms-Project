@@ -2,3 +2,29 @@
 #Include "Decorate/Weapons/Weapons.dec"
 
 #Include "PDAs/PDAs.dec"
+
+ACTOR DistanceCheckerCeiling : FastProjectile
+{
+	Speed 25
+	Radius 16
+	Height 40
+	Damage 0
+	Projectile
+
+	+CEILINGHUGGER
+	+SKYEXPLODE
+	+THRUACTORS
+	-ACTIVATEIMPACT
+	-ACTIVATEPCROSS
+
+	States
+	{
+  		Spawn:
+			TNT1 A 1
+			Loop
+		Death:
+			// duration must not be too short, otherwise script reports wrong values
+			TNT1 A 3 ACS_NamedExecuteAlways("StoreDistanceCheckResult", 0, GetDistance(false), ceilingz-floorz)
+			Stop
+	}
+}

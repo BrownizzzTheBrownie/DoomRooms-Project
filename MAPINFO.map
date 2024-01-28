@@ -1,10 +1,10 @@
-map MAP00 "UAC Secret Laboratory"
-next LVL0
+map INTR0 "Browntech Alpha Secret Laboratory"
+next CMPLX
 
-map LVL "Level 0"
-next MAP02
+map CMPLX "The Backrooms"
+next MAP01
 
 
-episode MAP00
+episode INTR0
 
 name "BackRooms...!?"

@@ -1,0 +1,390 @@
+[enu default]
+//This will apply for English and if there is no localization for the user's language.
+//When i was trying to translate this to portuguese it always used LANGUAGE.PTB for some reason even if it was set to English 
+
+//Position shit
+FPP_HELM = "Helmet";
+FPP_RSHO = "Right Shoulder";
+FPP_LSHO = "Left Shoulder";
+FPP_CENT = "Centered";
+FPP_GUN = "Weapon";
+FPP_DDZSHOULDER = "Shoulder (DarkDoomZ)";
+FPP_DDZHAND = "Handheld (DarkDoomZ)";
+FPP_CUSTPOS = "Custom";
+FPP_CUSTPOS_SWAY = "Custom (With Sway)";
+FPP_XPOS = "X Coordinate";
+FPP_XDESC = "< Left/Right >";
+FPP_YPOS = "Y Coordinate";
+FPP_YDESC = "< Back/Forward >";
+FPP_ZPOS = "Z Coordinate";
+FPP_ZDESC = "< Down/Up >";
+FPP_IFCUST = "If the setting above is set to \"Custom\", you will be able to tweak the beam position below";
+
+//Settings and shit
+FPP_TITOP = "Flashlight++ Options";
+FPP_TITCTRL = "Flashlight++ Controls";
+FPP_TITL = "Flashlight++";
+FPP_PRST = "Presets";
+FPP_SNDCHOICE = "Sound Effect";
+FPP_TGLE = "Toggle Flashlight";
+FPP_CLR = "Light Color";
+FPP_RNGE = "Intensity (Range)";
+FPP_IANG = "Inner Angle";
+FPP_OANG = "Outer Angle";
+FPP_BIND = "Flashlight++ Bindings";
+FPP_ALERT = "Alert Monsters";
+FPP_ALERT_TIP = "Alert monsters with your flashlight beam.";
+
+//Second Beam shit
+FPP_SECBEM = "Second Beam Enabled";
+FPP_SCBMUL = "Second Beam Color Modifier";
+FPP_SCRNGE = "Second Beam Intensity (Range)";
+FPP_IAN2 = "Second Beam Inner Angle";
+FPP_OAN2 = "Second Beam Outer Angle";
+
+//Misc shit
+FPP_POS = "Position";
+FPP_WARN = "Deletes all mod actors, after this, it's safe to save and the mod will be removed.";
+FPP_UINS = "Uninstall Flashlight++";
+FPP_PRTIT = "Flashlight Presets";
+//FPP_PRSTAPPL = "Preset applied, turn the flashlight off then on again to see changes";
+FPP_PLAYCLIK = "Play \"Click\" Sound";
+FPP_GZDOPT = "Related GZDoom Options";
+FPP_DYNALIGHTS = "Enables Dynamic Lights, turn this on if you want to see the flashlight!";
+FPP_FPSCAP = "Caps your FPS to 35, the flashlight won't look jittery, at the cost of framerate.";
+FPP_YOUSURE = "Are you sure you want to apply this preset? This will overwrite your current flashlight settings!";
+FPP_YUSURE2 = "Are you sure you want to remove Flashlight++ from this save file?";
+
+//Presets 4 localization1!1!1!1!!! (shit)
+FPP_DEFA = "Default";
+FPP_BLUMGK = "Blue Magic (Hexen/Heretic)";
+FPP_GRNMGK = "Green Magic (Hexen/Heretic)";
+FPP_LAMP = "Lamp";
+FPP_HDLI = "Mining Headlight";
+FPP_FULL = "Literally just fucking Fullbright";
+FPP_GENE = "Generic Flashlight";
+FPP_HARD = "Cel-Light 2000";
+FPP_METADOOM = "MetaDOOM Pistol flashlight";
+FPP_OP4NVG = "Night Vision";
+
+//Sound Effects
+FPP_DEFCLICK = "Default Click (Black Mesa)";
+FPP_OLDCLICK = "Old Click (BM + HL2)";
+FPP_ALTCLICK = "Alternate Click (Halo Doom)";
+FPP_FUUUTURE = "Futuristic Beeps (Selaco)";
+FPP_HL1TOGGLE = "High-tech Boop (Half-Life)";
+FPP_DDZTOGGLE = "Crisp Pop (DarkDoomZ)";
+FPP_PREYFLME = "Lighter (Prey '06)";
+FPP_OP4NVSND = "Night Vision Tick (HL: OP4)";
+FPP_FUUTURE2 = "Clicky Clack (Selaco)"; //i am running out of names
+FPP_LITFRONG = "Springy Click (LiTDOOM)"; //this is gonna be a nightmare to translate to portuguese, fuck
+
+//I should have called this "Flashlight#"
+
+//==============================================================================
+//
+//
+//
+//==============================================================================
+
+PDA_STARTER_KIT_VERSION = "1.1";
+
+PDA_READER = "PDA Reader";
+PDA_PICKUP = "New Data Entry: %s";
+PDA_DEFAULT_TITLE = "[DATA MISSING]";
+PDA_EMPTY = "-NOTHING-";
+
+//==============================================================================
+//
+// PDA Reader
+//
+//==============================================================================
+
+PDA_READER_PICKUP = "Picked up a PDA reader.";
+PDA_READER_TUTORIAL = "You picked up a PDA reader! Select it from your inventory bar and press %s to activate it.";
+
+//==============================================================================
+//
+// Creepy Note
+//
+//==============================================================================
+
+PDA_CNote_Title = "Strange Note ?";
+PDA_CNote_Text =
+	"'If you're not careful and you noclip out of reality in the wrong areas you'll end up in the Backrooms, where it's nothing but the stink of old moist carpet, the madness of mono-yellow, the endless background noise of fluorescent lights at maximum hum-buzz, and approximately six hundred million square miles of randomly segmented empty rooms to be trapped in."
+	"\n\n"
+	"God save you if you hear something wandering around nearby, because it sure as hell has heard you...'";
+	
+//==============================================================================
+//
+// Basics of the Backrooms; A Guide
+//
+//==============================================================================
+
+PDA_BackroomsBasics_Title = "Basics of the Backrooms; A Guide";
+PDA_BackroomsBasics_Text =
+	"The Backrooms is a large space outside of known reality. Time doesn't work the same, and there are dangerous entities lurking in the shadows. This guide is to help newcomers prepare physically and mentally for the Backrooms. So read up, because there have been no documented escapes."
+	"\n\n"
+	"How To get there: To get to the Backrooms, you must 'No-Clip' out of reality. There isn't a for-sure way to do this, as it seemingly happens at random times. There are some tips to increase your chances fo getting there, though. One way is to find a potential entrance; there are common places where entrances can be found, such as:"
+	"\n\n"
+	"- Walls that are a shade darker in abandoned buildings"
+	"\n\n"
+	"- Doors that look like they shouldn't lead anywhere or are in a random place"
+	"\n\n"
+	"Any area that gives paranormal feelings (hair standing up, buzzing, electric currents, sense of unease)"
+	"\n\n"
+	"- Missing the last step on a flight of stairs and falling on your face. (This usually does not work, only in very select flights of stairs, the anomalous properties of said stairs disappear/move after 2 or so entries using this method.)"
+	"\n\n"
+	"- Interacting with a corrupted object, such as a glitched chair."
+	"\n\n"
+	"If you find a place that looks like an entrance, make sure you're prepared, and then simply try to walk through the wall. There is about a one in ten thousand you'll get into the Backrooms; some people spend years trying to get in, and other get in on their first or second try."
+	"\n\n"
+	"It's all about luck: If you somehow get lucky (or unlucky) enough to reach the Backrooms, you'll most likely find yourself in Level 0, but there have been rare occurrences of others finding themselves in Levels 1 or 2."
+	"\n\n"
+	"Accepting your fate: If you have happened to stumble upon the Backrooms accidentally, the first thing you must do is..."
+	"\n\n"
+	"Step 1: Not panic, as panicking causes you to lose your senses and make noise, which may attract unwanted visitors."
+	"\n\n"
+	"Step 2: Make a mental note of your surrondings, and determine which Level you've landed in."
+	"\n\n"
+	"Step 3: Accept the Backrooms as your new home, because you won't be returning to Earth ever again."
+	"\n\n"
+	"Step 4: Stay here, as attempting to escape will most likely lead to more dangerous levels. There are no exits from the Backrooms, and it is difficult to even attempt to find one, as you must pass through many dangerous levels and unlikely occurrences."
+	"\n\n"
+	"None have ever officially made it out, and it is currently unknown if it ends.";
+	
+//==============================================================================
+//
+// Level 0 and Subslevels
+//
+//==============================================================================
+
+PDA_Level0_Title = "Level 0 - Tutorial Level";
+PDA_Level0_Text = 
+	"SURVIVAL DIFFICULTY:"
+	"\n"
+	"Class 1"
+	"\n"
+	"- Safe"
+	"\n"
+	"- Secure"
+	"\n"
+	"- Minimal Entity Count"
+	"\n\n"
+	"Level 0 is the 1st level of the Backrooms, and the fist level many encounter."
+	"\n\n"
+	"Description:"
+	"\n"
+	"Level 0 is a non-linear space, resembling the back rooms of a retail outlet. Similar to its previous form, all rooms in Level 0 appear uniform and share superficial features such as yellowed wallpaper, damp carpet, and inconsistently placed fluorescent lighting. However, no two rooms within the level are identical."
+	"\n"
+	"The installed lighthing flickers inconsistently and hums at a constant frequency. This buzzing is notably louder and more obtrusive than ordinary flourescent humming, and examination of the fixtures to determine the source has been inconclusive. The substance saturating the carpet cannot be consistently identified. It is not water, nor is it safe to consume.(Traces of pleural fluid have been found in the analysis.)"
+	"\n\n"
+	"Linear space in Level 0 is altered drastically; it is possible to walk in a straight line and return to the starting point, and retracing your steps will result in a different set of rooms, consistent navigation is extremely difficult. Devices such as compasses and GPS locators fail to function within the level, and radio communications are distorted and unreliable."
+	"\n\n"
+	"Level 0 is entirely still and devpid of life. Despite the fact that is the primary entrance to the Backrooms, contact with other wanderers within the level has never been reported. Presumably, a great number of poeple have died before exiting, the most likely causes being dehydration, starvation, and psychological hypothetical deaths. Attempting to enter Level 0 in a group will result in the separtion of group until the level is exited."
+	"\n\n"
+	"Rooms with 'red wallpaper and dim lighting' appear very rarely. These should not be approached or entered."
+	"\n\n"
+	"hallucinations are common in Level, the most common being:"
+	"\n\n"
+	"- Humming from the lighting increasing to a deafening volume then abruptly silencing."
+	"\n"
+	"- The appearance of doors."
+	"\n"
+	"- The appearance of stairs."
+	"\n"
+	"- Human-like speech resembling no known language."
+	"\n"
+	"- Movement in peripheral vision resembling insects crawling underneath the wallpaper, which desappears once the wall is observed directly."
+	"\n"
+	"- Insect-like chittering."
+	"\n\n"
+	"According to analysis, the CO² levels within Level 0 are rising at a steady rate. The significance of this is unknown."
+	"\n\n"
+	"Entities:"
+	"\n\n"
+	"No entities are known to exist within the level, including other humans. If you see, hear, or encounter what you believe to be another wanderer, it is not a human."
+	"\n\n"
+	"Entrances And Exits:"
+	"\n\n"
+	"Entrances"
+	"\n\n"
+	"Accidental no-clipping out of the bounds of the most consistent way of accesing Level 0, and, by extension, The Backrooms. See the 'Basics of the Backrooms' guide for more information."
+	"\n\n"
+	"The fortresses of Level 283 rarely contain wooden doors that smell of mold; entering these doors will lead to Level 0."
+	"\n\n"
+	"Exits"
+	"\n\n"
+	"Exiting Level 0 is only possible by noclipping, which will always result in entry to Level 1. As newxomers to Level 0 are often unfamiliar with the mechanics of the Backrooms it is necessary to keep your bearings and adapt quickly to the environment in oreder to exit."
+	"\n\n"
+	"Entrance to the Manila Room is rare but possible by walking a great distance in any direction. Unlike Level 0, wanderers can meet freely in the Manila Room, but the room is a dead end. Rather, it functions as a rendez-vous room for wanderers who survive the trek."
+	"\n\n"
+	"Additionally, documentation from the M.E.G. can be found in the Manila Room, assisting newcomers in survival and escape, Instruction on how to noclip can be found in [DATA MISSING].";
+
+//==============================================================================
+//
+// Level 0.1 - Zenith Station
+//
+//==============================================================================
+
+PDA_ZStation_Title = "Level 0.1 - Zenith Station";
+PDA_ZStation_Text =
+	"Ria Valpuri stands at one of the many glass windows in the Zenith Station, lookung out at the distant stars. In the upper-right corner of the window, she can just make out the star she calls Sol, and although she cannot see it, she knows that circling it is a planet called 'Earth'. The planet where her grandparents were born, and the planet to wich her children's children's may someday return. That is, as long as everything today goes according to plan."
+	"\n\n"
+	"She looks back at the screen, double and triple-checking the calibrations as toensure that noting will go wrong. The culmination of decades of work, coupled with centuries of scientific theory, has made it so that everything that can be accounted for will be. Doubts flood into her head that she cannot push aside.";
+	
+	
+//==============================================================================
+//
+// Lore
+//
+//==============================================================================
+
+//==============================================================================
+//
+// Call n°1
+//
+//==============================================================================
+
+PDA_Calln1_Title = "Call n°1 - Brownizzz Barithel, 'Louis-Philippe Barithel'"; 
+PDA_Calln1_Text =
+	"[BEGIN CALL]"
+	"\n\n"
+	"[LP]: Hey it's Louis-Philippe, I hope it's not too late."
+	"\n\n"
+	"[BB]: No It's fine don't worry. What's up, are you alright ?"
+	"\n\n"
+	"[LP]: Yeah, it's not me, it's my mom. She Knocked out cold and I have no idea why. I'm on my way to the E.R. (Emergency Room), but could you do me a favor"
+	"\n\n"
+	"[BB]: Yeah of course, what is it ?"
+	"\n\n"
+	"[LP]: I just need you to come over and turn on the cameras we have set up. You know the ones we installed after we were robbed ?(Event yet to be investigated)."
+	"\n\n"
+	"[BB]: Oh year. Would you mind if I asked why ?"
+	"\n\n"
+	"[LP]: Well she screamed really loud right before I found her on the ground. I just-"
+	"\n\n"
+	"[BB]: Well do you have your doors and windows locked like what the broadcast told us to do ?"
+	"\n\n"
+	"[LP]: Yeah that's the weird part. Maybe she saw something ? I don't know."
+	"\n\n"
+	"[BB]: Alright I mean it shouldn't be too bad. I'm just gonna switch themon and get otta there though. You know how I feel about your house."
+	"\n\n"
+	"[LP]: Yeah that's fine. One last thing. Try to get a good view of the back hallway if you don't mind."
+	"\n\n"
+	"[BB]: Okay."
+	"\n\n"
+	"[LP]: Alright I'm almost at the hospital. Thank you."
+	"\n\n"
+	"[CALL ENDS]";
+
+//==============================================================================
+//
+// Camera Report n°1 - Item n°3
+//
+//==============================================================================
+PDA_CameraReportn1_Title = "Camera Report n°1 - Item n°3" 
+PDA_CameraReportn1_Text =
+	"[LOG]"
+	"\n\n"
+	"[CAMERA WORKING]"
+	"\n\n"
+	"[WARNING PRESENCE DETECTED AT 3:31 A.M. IN THE BACKYARD SHED DOOR]"
+	"\n\n"
+	"[PRESENCE GONE]"
+	"\n\n"
+	"[WARNING BACK HALLWAY DOOR OPEN]"
+	"\n\n"
+	"[WARNING BASEMENT ENTRENCE'S CAMERA OFF]"
+	"[WARNING BACKYARD'S SHED CAMERA OFF]"
+	"[CAMERA 1 IS WORKING - FLASH BATTERY LOW]"
+	"\n\n"
+	"[WARNING FOOTS STEP DETECTED]"
+	"\n\n"
+	"[AUDIO]"
+	"Where did you go, Brownizzz"
+	"\n\n"
+	"[CAMERA 1 OFF]"
+	"\n\n"
+	"[LOG ENDED]";
+
+//==============================================================================
+//
+// The T.H.I.N.K. Principle - Tape 1
+//
+//==============================================================================
+PDA_THINKPrinciple1_Title = "The T.H.I.N.K. Principle - Tape 1" 
+PDA_THINKPrinciple1_Text =
+	"[BEGIN TAPE]"
+	"\n\n"
+	"BROWN DEPARTMENT OF TEMPORAL PHENOMENA"
+	"\n\n"
+	"We are currently receiving countless reports of an unidentified hostile organism that we'll refer to as 'Alternates'."
+	"\n\n"
+	"Until we have a complete understanding of the threat, it's important to stay home, lock all doors and windows, and have access to a loaded firearm or any ranged weapon at all times."
+	"\n\n"
+	"You will know if an alternate exists solely based on their physical characteristics:"
+	" - If you see another person that looks identical to you, run away and hide."
+	" - If you see a person that has a biologically impossible characteristic, run away and hide."
+	"\n\n"
+	"If one manages to break into your home, refrain from any kind of communication or contact with the threat. These intelligent lifeforms utilize elements of psychological warfare to take advantage of their victims."
+	"\n\n"
+	"While we heavily discourage any form of contact or communication with an Alternate, we make exceptions at attempts to executing them yourself."
+	"\n\n"
+	"[END OF THE TAPE]";
+
+//==============================================================================
+//
+// The T.H.IN.K. Principle - Tape 2
+//
+//==============================================================================
+PDA_THINKPrinciple2_Title = "The T.H.I.N.K. Principle - Tape 2"
+PDA_THINKPrinciple2_Text =
+	"[BEGIN TAPE]"
+	"\n\n"
+	"BROWN DEPARTMENT OF TEMPORAL PHENOMENA"
+	"\n\n"
+	"When in doubt, follow the 'THINK' principle."
+	"\n\n"
+	"TELL - An authority figure about your encounter"
+	"\n\n"
+	"HINDER - The alternate's movement"
+	"\n\n"
+	"IDENTIFY - The threat level"
+	"\n\n"
+	"NEUTRALIZE - The alternate (if safe to do so)"
+	"\n\n"
+	"KNOW YOUR PLACE - In reality"
+	"\n\n"
+	"KNOW YOUR ENEMY:"
+	" - Type One: Doppelgänger: we are shown two examples of individuals that appear strikingly similar to one another."
+	" - Type Two: Detectable: we are shown [DATA MISSING], and then the 'Alternate'"
+	" - Type Three: [DATA MISSING]: we are shown disturbingly deformed alternates next to the individuals they are attempting to copy."
+	"\n\n"
+	"[END OF THE TAPE]";
+	
+//==============================================================================
+//
+// Notebook n°1 "REASSURANCE" - Item n°13
+//
+//==============================================================================
+PDA_NoteBook1_Title = "'REASSURANCE' - Item n°13"
+PDA_NoteBook_Text =
+	"It followed me home, Louis-Philippe"
+	"\n\n"
+	"I do not want to see what is on the other side"
+	"\n\n"
+	"But it has been days, and nobody has come to help me."
+	"\n\n"
+	"Where are you Louis-Philippe... why...came...ME..."
+	"\n\n"
+	"YOU'RE NEXT [UNREADABLE]";
+	
+//==============================================================================
+//
+// Camcorder n°1 - Item n°17
+//
+//==============================================================================
+PDA_CamCorder1_Title = "Brownizzz Camcorder - Item n°17"
+PDA_CamCorder1_Text =
+	"";

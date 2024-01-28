@@ -1,28 +1,71 @@
-//===========================================================================
-//
-// PDA INTERFACE SOUNDS
-//
-//===========================================================================
+//ColtSA
+ColtClac	COLTCLAC
+COLTClos	COLTClos
+COLTEjec 	ColtEjec
+COLTInsr 	ColtInsr
+COLTOpen	ColtOpen
+COLTPLOW	COLTPLOW
+COLTDRY 	COLTDRY
+SHBOUNS1	SHBOUNS1
 
-PDA/Interface/Menu_Open "Sounds/PDA/pda_open.ogg"
-PDA/Interface/Menu_Close "Sounds/PDA/pda_close.ogg"
-PDA/Interface/Hover "Sounds/PDA/pda_hover.ogg"
-PDA/Interface/Activate "Sounds/PDA/pda_activate.ogg"
+//Glock 21
+weapons/glockup GLOKUP
+weapons/glockfire GLOKFIRE
+weapons/glockdry GLOKDRY
+weapons/glockout GLOKOUT
+weapons/glockin	GLOKIN
 
-//============================================================================
-//
-// Weapons Sounds
-//
-//============================================================================
+//HandCannon
+92FS 92FS
+92FT 92FT
+92FU 92FU
+$random weapons/HandCannon	{ 92FS 92FT 92FU }
 
-//$random HCFire { HCFire1 HCFire2 HCFire3 }
-HCFire1 92FT
-HCFire2 92FU
-HCFire2 92FS
+//MagnumRevolver
 
-swatshotgun/Fire	SWATFIR
-swatshotgun/Reload	SWATREL
+//UACPistol
+weapons/gock GOCK
+CLIPOUT CLIPOUT
+CLIPIN CLIPIN
+weapons/glockdry1 DRY
+DRY DRY
+GOCK GOCK
 
-weapons/minigunfire DSMINIGN
+//Default
+flashlightOn    	      BMFLASON
+flashlightOff             BMFLAOFF
 
-magsixty/fire magfire1
+//Halo: Doom Evolved
+altflashlightOn           ALTFON
+altflashlightOff          ALTFOFF
+
+//Old BM + HL2 
+oldflashlightOn           OLDFON
+oldflashlightOff          OLDFOFF
+
+//Half-Life
+hl1flashlightToggle       HLFTGGLE
+
+//Selaco
+selacoflashlightOn        SELFLAON
+selacoflashlightOff       SELFLOFF
+
+//DarkDoomZ
+darkdoomzflashlightToggle DDZFTGLE
+$pitchset darkdoomzflashlightToggle 0.9 1.1
+
+//Prey '06
+preyflashlightOn          PREYFLON
+preyflashlightOff         PREYFOFF
+
+//HL OpForce
+op4flashlightOn           OP4FLAON
+op4flashlightOff          OP4FLOFF
+
+//Selaco
+selaco2flashlightOn       SE2FLAON
+selaco2flashlightOff      SE2FLOFF
+
+//LiTDOOM (When the Doom is Lit :flushed:)
+litdoomflashlightOn       LITFLAON
+litdoomflashlightOff      LITFLOFF
