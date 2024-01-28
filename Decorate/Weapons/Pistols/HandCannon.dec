@@ -1,0 +1,55 @@
+Actor HandCannon : Weapon 30001
+{
+  Obituary "%o was splattered by %k's HandCannon"
+  AttackSound "weapons/HandCannon"
+  Inventory.pickupmessage "You got the Hand Cannon!"
+  Weapon.SelectionOrder 400
+  Weapon.SlotNumber 2
+  Weapon.kickback 100
+  +WEAPON.AMMO_OPTIONAL
+  Decal "PlasmaScorch"
+  States
+  {
+  Spawn:
+    HACA P -1
+    Stop
+  Ready:
+    HACA A 1 A_WeaponReady(WRF_ALLOWZOOM)
+    Loop
+  Deselect:
+    HACA A 1 A_Lower
+    Loop
+  Select:
+    HACA A 1 A_Raise
+    Loop
+    Fire:
+    HACA B 1 Bright A_FireBullets(3, 3, 1, 8, "HandCannonPuff")
+    HACA B 1 Bright A_GunFlash
+    HACA C 2
+    HACA D 2
+    HACA C 2
+    HACA A 6
+    Goto Ready
+  Flash:
+    TNT1 A 2 A_Light2
+    TNT1 A 2 A_Light1
+    Goto LightDone
+   
+  }
+}
+  
+Actor HandCannonPuff : Bulletpuff
+{
+RenderStyle Add
+Alpha 0.8
+Scale 0.3
+VSpeed 0
++PUFFONACTORS
+States
+    {
+    Spawn:
+    Melee:
+        PLSE ABDE 4 Bright
+        Stop
+    }
+}

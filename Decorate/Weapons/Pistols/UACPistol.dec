@@ -1,0 +1,84 @@
+Actor UACPistol : Weapon 30003
+{
+  Obituary "%o got shot by %k."
+  +WEAPON.NOAUTOFIRE
+  +WEAPON.ALT_USES_BOTH
+  AttackSound "weapons/gock"
+  Inventory.pickupmessage "Picked up an UAC Standard Pistol."
+  Weapon.SelectionOrder 2
+  Weapon.AmmoUse 1
+  Weapon.AmmoGive 18
+  Weapon.SlotNumber 2
+  Weapon.kickback 100
+  Weapon.AmmoType "Clip"
+  Decal "BulletChip"
+  States
+  {
+  Spawn:
+   DEPI A -1
+   Stop
+  Ready:
+   TNT1 A 0 A_JumpIf(CountInv("ShotCounter")<1,"ReadyNoReload")
+   DPIG A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+   Loop
+  ReadyNoReload:
+   DPIG A 1 A_WeaponReady
+   Goto Ready
+  Deselect:
+   DPIG A 1 A_Lower
+   Loop
+  Select:
+   DPIG A 1 A_Raise
+   Loop
+  Fire:
+   TNT1 A 0 
+   TNT1 A 0 A_GunFlash
+   DPIF A 2 Bright A_FireBullets(2,2,-1,6,"BulletPuff",1)
+   DPIG B 1 A_GiveInventory("ShotCounter",1)
+   DPIG C 3
+   DPIG A 3 A_JumpIfInventory("ShotCounter",18,"DryFire")
+   Goto Ready
+  AltFire:
+   TNT1 A 0 A_GunFlash
+   DPIF A 2 Bright A_FireBullets(2,2,-1,6,"BulletPuff",1)
+   DPIG B 1 A_GiveInventory("ShotCounter",1)
+   DPIG C 3
+   TNT1 A 0 A_JumpIfInventory("ShotCounter",18,"DryFire")
+   DPIF A 2 Bright A_FireBullets(2,2,-1,6,"BulletPuff",1)
+   DPIG B 1 A_GiveInventory("ShotCounter",1)
+   DPIG C 3
+   TNT1 A 0 A_JumpIfInventory("ShotCounter",18,"DryFire")
+   DPIF A 2 Bright A_FireBullets(2,2,-1,6,"BulletPuff",1)
+   DPIG B 1 A_GiveInventory("ShotCounter",1)
+   DPIG C 3
+   DPIG A 3 A_JumpIfInventory("ShotCounter",18,"DryFire")
+   Goto Ready
+  DryFire:
+   DPIG A 6
+   DPIG A 6 A_PlaySound("weapons/glockdry1")
+   Goto Reload
+  Reload:
+   DPIR A 3 A_TakeInventory("ShotCounter",18)
+   DPIR B 3 A_Playsound ("CLIPOUT")
+   DPIR C 3
+   DPIR D 3
+   DPIR E 3
+   DPIR F 3 A_Playsound ("CLIPIN")
+   DPIR G 3
+   DPIR H 3
+   DPIR I 3
+   DPIR J 3
+   DPIG A 3
+   Goto Ready
+  Flash:
+   TNT1 A 2 A_Light2
+   TNT1 A 2 A_Light1
+Goto LightDone
+  }
+}
+
+Actor ShotCounter : Inventory
+{
+-INVENTORY.INVBAR
+Inventory.MaxAmount 18
+} 

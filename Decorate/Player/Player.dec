@@ -1,4 +1,4 @@
-Actor TheLostMarine : DoomPlayer
+Actor B-TechMarine : DoomPlayer
 {
 	Speed 1
 	Gravity 0.6
@@ -8,20 +8,23 @@ Actor TheLostMarine : DoomPlayer
 	Mass 100
 	PainChance 255
 	+NOBLOOD
-	Player.DisplayName "The Lost Marine"
-	Player.StartItem "HandCannon"
+	Player.DisplayName "B-Tech Marine"
 	Player.StartItem "Fist"
-	Player.StartItem "PDA"
+	//Player.StartItem "PDA"
+	Player.WeaponSlot 1, FlashLightAngled, FlashlightCentered
 	Player.WeaponSlot 1, Fist, Chainsaw
-	Player.WeaponSlot 2, HandCannon, Mag60
-	Player.WeaponSlot 3, Shotgun, SwatShotgun, SuperShotgun
-	Player.WeaponSlot 4, Chaingun, Minigun
+	Player.WeaponSlot 2, ColtSA, Glock21, HandCannon, UACPistol
+	Player.WeaponSlot 3, Shotgun, SuperShotgun
+	Player.WeaponSlot 4, Chaingun
 	Player.WeaponSlot 5, RocketLauncher
 	Player.WeaponSlot 6, PlasmaRifle
 	Player.WeaponSlot 7, BFG9000
 	Player.RunHealth 20
 	Player.ForwardMove 0.45, 0.5
 	Player.SideMove 0.45, 0.5
+	Player.DamageScreenColor red, 1.0
+	Player.MaxHealth 110
+	Player.AirCapacity 2
 	
 	Player.ColorRange 112, 127
 	Player.Colorset 0, "Green",			0x70, 0x7F,  0x72

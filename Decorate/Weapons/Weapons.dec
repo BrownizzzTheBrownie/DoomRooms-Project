@@ -1,11 +1,35 @@
 //Slot1
 
+
 //Slot2
-#Include "Decorate/Weapons/Pistol/HandCannon.dec"
-#Include "Decorate/Weapons/Pistol/Mag60.dec"
+#Include "Decorate/Weapons/Pistols/ColtSA.dec"
+#Include "Decorate/Weapons/Pistols/Glock21.dec"
+#Include "Decorate/Weapons/Pistols/HandCannon.dec"
+#Include "Decorate/Weapons/Pistols/UACPistol.dec"
 
 //Slot3
-#Include "Decorate/Weapons/Shotgun/SwatShotgun.dec"
+
 
 //Slot4
-#Include "Decorate/Weapons/Minigun/Minigun.dec"
+
+
+//Slot5
+
+
+//Slot6
+
+
+//Slot7
+
+
+//Slot8
+
+
+//Slot9
+
+
+//Slot0
+
+
+//Extra
+#Include "Decorate/Weapons/Ammo.dec"

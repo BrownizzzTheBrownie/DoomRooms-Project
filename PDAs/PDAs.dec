@@ -4,7 +4,7 @@
 //
 //===========================================================================
 
-ACTOR CreepyNote : PDA
+ACTOR CreepyNote : PDA 20001
 {
 	Tag "$PDA_CNote_Title"
 	PDA.Text "$PDA_CNote_Text"
@@ -17,7 +17,7 @@ ACTOR CreepyNote : PDA
 	}
 }
 
-ACTOR Level0Case : PDA
+ACTOR Level0Case : PDA 20002
 {
 	Tag "$PDA_Level0_Title"
 	PDA.Text "$PDA_Level0_Text"
@@ -32,7 +32,20 @@ ACTOR Level0Case : PDA
 	}
 }
 
-ACTOR BackroomsBasics : PDA
+ACTOR ZStationCase : PDA 20003
+{
+	Tag "$PDA_ZStation_Title"
+	PDA.Text "$PDA_ZStation_Text"
+
+	States
+	{
+		Spawn:
+			NOTE A -1
+			Stop
+	}
+}
+
+ACTOR BackroomsBasics : PDA 20999
 {
 
 	Tag "$PDA_BackroomsBasics_Title"
@@ -47,4 +60,104 @@ ACTOR BackroomsBasics : PDA
 	
 	}
 
+}
+
+ACTOR THINKPrinciple1 : PDA 10001
+{
+
+	Tag "$PDA_THINKPrinciple1_Title"
+	PDA.text "$PDA_THINKPrinciple1_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+
+}
+
+ACTOR THINKPrinciple2 : PDA 10002
+{
+
+	Tag "$PDA_THINKPrinciple2_Title"
+	PDA.text "$PDA_THINKPrinciple2_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+
+}
+
+ACTOR Calln1 : PDA 10003
+{
+
+	Tag "$PDA_Calln1_Title"
+	PDA.text "$PDA_Calln1_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+
+}
+
+ACTOR CameraReportn1 : PDA 10004
+{
+
+	Tag "$PDA_CameraReport1_Title"
+	PDA.text "$PDA_CameraReport1_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+
+}
+
+ACTOR NoteBook1 : PDA 10005
+{
+
+	Tag "$PDA_NoteBook1_Title"
+	PDA.text "$PDA_NoteBook1_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
+}
+
+ACTOR CamCorder1 : PDA 10006
+{
+
+	Tag "$PDA_CamCorder1_Title"
+	PDA.text "$PDA_CamCorder1_Text"
+	
+	States
+	{
+	
+		Spawn:
+			NOTE A -1
+			Stop
+	
+	}
 }
