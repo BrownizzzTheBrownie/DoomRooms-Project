@@ -122,3 +122,58 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Unnumbered Entity - "Icarus Procidens"
 - Unnumbered Entity - "Nostalgi Gaius"
 - Unnumbered Entity - "The Pillars"
+
+#Phenomenon List
+- Phenomenon 1 - "Directed Control"
+- Phenomenon 2 - "Blood Moons"
+- Phenomenon 3 - "Happy Dance"
+- Phenomenon 4 - "Spiderposting"
+- Phenomenon 5 - "No-clipping"
+- Phenomenon 6 - "The Nibiru Cataclysm"
+- Phenomenon 7 - "Liminal Echo"
+- Phenomenon 8 - "Doodletrapping"
+- Phenomenon 9 - "The Blue Consumption"
+- Phenomenon 10 - "Avatarhood"
+- Phenomenon 11 - "Backronyms"
+- Phenomenon 12 - "Botanicancer"
+- Phenomenon 13 - "A Way Out"
+- Phenomenon 14 - "Maybe, Maybe Not"
+- Phenomenon 15 - "Inversion"
+- Phenomenon 16 - "Destabilizing Storms"
+- Phenomenon 17 - "Frontrooms Reflection"
+- Phenomenon 18 - "The Infinite Wanderer"
+- Phenomenon 19 - "Radio Waves of the Past"
+- Phenomenon 20 - "Recurring Dreams"
+- Phenomenon 21 - "Respite"
+- Phenomenon 22 - "🪑"
+- Phenomenon 24 - "No-Clip Derailing"
+- Phenomenon 26 - "S.U.N., You Think You're Funny Aren't Ya? Undo This Curse!"
+- Phenomenon 29 - "Whispers"
+- Phenomenon 33 - "Autocorrect"
+- Phenomenon 37 - "Generosity"
+- Phenomenon 43 - "Forbidden Info"
+- Phenomenon 50 - "Vortexes"
+- Phenomenon 54 - "Genesis Delusion"
+- Phenomenon 55 - "GODHAND"
+- Phenomenon 99 - "Forced Immortality"
+
+#Objects List
+
+
+#P.O.I. (Person of Interest) List
+
+
+#Group List
+- Backrooms Remodeling Co.
+- Backrooms Robotics
+- The B.N.T.G.
+- The Eternal Repository
+- The Eyes Of Argos
+- The Iron Fist
+- The Followers Of Jerry
+- The Kalag Institute
+- The Lost
+- The M.E.G.
+- The Masked Maidens
+- The Pantheon
+- The U.E.C.
