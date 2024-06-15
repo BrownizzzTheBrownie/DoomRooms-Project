@@ -7,6 +7,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Implement a basic sanity bar => no started
 
 #Progression
+#Levels
 - Intro Level - "BrownTech β Labs" => not finished
 - Level 0 - "Tutorial Level" => not finished
     - Level 0.1 - "Zenith Sation" => not started
@@ -64,3 +65,6 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
     - The Headquarters => not started
     - The Mirror Room => not started
     - Radio Backrooms' Studio => not started
+#Unnemberd Levels
+- Unnemberd Level - "A Long Forgotten Exclamation..."
+- Unnemberd Level - "The Basement"
