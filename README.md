@@ -99,3 +99,26 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Unnemberd Level - "Hephaetus' Forge" => not started
 - Unnemberd Level - "T!!HE VO!!ID??" => not started
 - Unnemberd Level - "The World Factory" => not started
+
+#Entities
+- Entity 1 - "The Humans" => not started LOL (sorry)
+- Entity 2 - "The Windows" => not started
+- Entity 3 - "Smiler" => not started
+- Entity 4 - "Deathmoths" => not started
+- Entity 5 - "Clump" => not started
+- Entity 6 - "Dullers" => not started
+- Entity 7 - "Jerry" => not started
+- Entity 8 - "Hound" => not started
+- Entity 9 - "Facelings" => not started
+- Entity 10 - "Skin-Stealer" => not started
+
+#Unnumbered Entities List
+- Unnumbered Entity - "The Allseer"
+- Unnumbered Entity - "Artificial Light"
+- Unnumbered Entity - "The Conductor"
+- Unnumbered Entity - "Gods of Griots"
+- Unnumbered Entity - "Hymenoptera"
+- Unnumbered Entity - "Hypothetical Creator"
+- Unnumbered Entity - "Icarus Procidens"
+- Unnumbered Entity - "Nostalgi Gaius"
+- Unnumbered Entity - "The Pillars"
