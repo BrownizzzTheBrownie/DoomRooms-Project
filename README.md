@@ -2,9 +2,9 @@
 a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http://backrooms-wiki.wikidot.com/ ). If you want to help me for idk reasons or to chat about this project, my discord: brownizzz (A server will be made later, maybe when Level 0 will be finished)
 
 #Goal for now
-1 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
-2 - Do the basic entiies => not started
-3 - Implement a basic sanity bar => no started
+- Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
+- Do the basic entiies => not started
+- Implement a basic sanity bar => no started
 
 #Progression
 - Intro Level - "BrownTech β Labs" => not finished
@@ -19,5 +19,48 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
     - Level 1.1 - "Corrupted Corridor" => not started
     - Level 1.3 - "Malignance" => not started
     - Level √2 => not started
-    - Level 1.5 - 
-
+    - Level 1.5 - "Inverted" => not started
+    - Traders Vault => not started
+- Level 2 - "Abandoned Utility Halls" => not started
+    - Level 2.2 - "Constant Buzz" => not started
+    - Office Space EL3A => not started
+- Level 3 - "Electrical Station" => not started
+    - Level 3.1 - "Space Complex" => not started
+- Level 4 - "Abandoned Office"
+    - Level 4.2 - "Parking Lot Of Fog" => not started
+    - Level 4.3 - "Decayed" => not started
+    - Level 4.4 - "Crazed State" => not started
+    - The Surveillance Room => not started
+- Level 5 - "Terror Hotel" => not started
+    - Level 5.1 - "GRAND OPENING OF THE TERROR HOTEL CASINO" => not started
+    - Level 5.2 - "Scenic Views" => not started
+    - Level 5.3 - "Promethei Bibliotheca" => not started
+- Level 6 - "Lights Out" => not started
+    - Level 6.1 - "The Snackrooms" => not started
+    - Level 6.2 - "The Neon Maze" => not started
+    - Level 6.3 - "Vantablack" => not started
+        - Level 6.31 - "Pierce the Veil" => not started
+- Level 7 - "Thalassophobia" => not started
+    - Level 7.7 - "The Forsaken Debris" => not started
+    - Level 7.9 - "Surface Caves" => not started
+    - The Hadal Zone => not started
+- Level 8 - "Cave System" => not started
+    - Level 8.1 - "The Dead Caverns" => not started
+    - The Sanctum Subterraneous
+- Level 9 - "The Surburbs" => not started
+    - Level 9.1 - "Can we pretend that a meteor destroyed the Crimson Forest" => not started
+    - Level 9.2 - "Black Market" => not started
+    - Level 9.3 - "The Overcast Manifold" => not started
+    - Level 9.5 - "Rochester Blues" => not started
+- Level 10 - "The Bumper Crop" => not started
+    - Level 10.1 - "Corpse Lake" => not started
+    - Level 10.2 - "Hay Bale Heaven" => not started
+- Level 11 - "The Endless City" => not started
+    - Asset 11.1 - "Private Enterprise" => not started
+    - Scene-01.2 - "The Refuge" => not started
+    - Level 11.3 - "The Red Light District" => not started
+    - AFTER HOURS => not started
+    - The Chamber => not started
+    - The Headquarters => not started
+    - The Mirror Room => not started
+    - Radio Backrooms' Studio => not started
