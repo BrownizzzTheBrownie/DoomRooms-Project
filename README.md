@@ -66,5 +66,33 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
     - The Mirror Room => not started
     - Radio Backrooms' Studio => not started
 #Unnemberd Levels
-- Unnemberd Level - "A Long Forgotten Exclamation..."
-- Unnemberd Level - "The Basement"
+- Unnemberd Level - "A Long Forgotten Exclamation..." => not started
+- Unnemberd Level - "The Basement" => not started
+- Unnemberd Level - "The Blue Chaneel" => not started
+- Unnemberd Level - "The Forgotten Forest" => not started
+- Unnemberd Level - "The Foundy" => not started
+- Unnemberd Level - "The Frontrooms" => not started (actually do you really thinks I need to do this level really ?)
+- Unnemberd Level - "The Future" => not started
+- Unnemberd Level - "The Grave" => not started
+- Unnemberd Level - "Greyrealm -- Domain of Upsilon" => not started
+- Unnemberd Level - "The Heart of the Universe" => not started
+- Unnemberd Level - "home" => not started
+- Unnemberd Level - "Hotel Virginia" => not started
+- Unnemberd Level - "The Hub" => not started
+    - Unnemberd Level - "HELP" => not started
+- Unnemberd Level - "Induced Fear" => not started
+- Unnemberd Level - "Level -998" => not started
+- Unnemberd Level - "Level 14 - "The Military Hospital"" => not started
+- Unnemberd Level - "Level Θ" => not started
+- Unnemberd Level - "Lost Love" => not started
+- Unnemberd Level - "The Middlesorts" => not started
+- Unnemberd Level - "Mind Palace" => not started
+- Unnemberd Level - "Oneiroscape" => not started
+- Unnemberd Level - "Our Moon" => not started
+- Unnemberd Level - "PA98" => not started
+- Unnemberd Level - "Recurring Dreams" => not started
+- Unnemberd Level - "The Serpent's Void" => not started
+- Unnemberd Level - "TH3 SH4DY GR3Y" => not started
+- Unnemberd Level - "Hephaetus' Forge" => not started
+- Unnemberd Level - "T!!HE VO!!ID??" => not started
+- Unnemberd Level - "The World Factory" => not started
