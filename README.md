@@ -1,10 +1,12 @@
 # DoomRooms
 a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http://backrooms-wiki.wikidot.com/ ). If you want to help me for idk reasons or to chat about this project, my discord: brownizzz (A server will be made later, maybe when Level 0 will be finished)
 
+
 #Goal for now
 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
 - Do the basic entiies => not started
 - Implement a basic sanity bar => no started
+
 
 #Progression
 #Levels
@@ -65,6 +67,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
     - The Headquarters => not started
     - The Mirror Room => not started
     - Radio Backrooms' Studio => not started
+
 #Unnemberd Levels
 - Unnemberd Level - "A Long Forgotten Exclamation..." => not started
 - Unnemberd Level - "The Basement" => not started
