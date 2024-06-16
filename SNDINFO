@@ -22,6 +22,29 @@ weapons/glockin	GLOKIN
 $random weapons/HandCannon	{ 92FS 92FT 92FU }
 
 //MagnumRevolver
+$random Weapons/HeavyPistolFire { HPIST1 HPIST2 HPIST3 }
+HPIST1	PFIRE_01
+HPIST2	PFIRE_02
+HPIST3	PFIRE_03
+$volume Weapons/PistolFire		0.7
+
+weapons/empty	DRYFIRE
+RELOADA		RELOADA
+SNAP		SNAP
+CHAMB		CHAMB
+DRAW		DRAW
+
+$random DSCASING	{ DSCASIN1 DSCASIN2 DSCASIN3  }
+DSCASIN1			DCASIN1
+DSCASIN2			DCASIN2
+DSCASIN3			DCASIN3
+
+//Trenchgun
+TRNCFIR TRNCFIR
+TRNCREL TRNCREL
+TRNCLOA TRNCLOA
+TRNCRE2 TRNCRE2
+TRNCDRY TRNCDRY
 
 //UACPistol
 weapons/gock GOCK
@@ -32,40 +55,44 @@ DRY DRY
 GOCK GOCK
 
 //Default
-flashlightOn    	      BMFLASON
-flashlightOff             BMFLAOFF
+flashlightOn    	      "Sounds/BlackMesa_On.ogg"
+flashlightOff             "Sounds/BlackMesa_off.ogg"
 
 //Halo: Doom Evolved
-altflashlightOn           ALTFON
-altflashlightOff          ALTFOFF
+altflashlightOn           "Sounds/Alternate_On.ogg"
+altflashlightOff          "Sounds/Alternate_Off.ogg"
 
 //Old BM + HL2 
-oldflashlightOn           OLDFON
-oldflashlightOff          OLDFOFF
+oldflashlightOn           "Sounds/BlackMesaHL2_On.ogg"
+oldflashlightOff          "Sounds/BlackMesaHL2_Off.ogg"
 
 //Half-Life
-hl1flashlightToggle       HLFTGGLE
+hl1flashlightToggle       "Sounds/HalfLife1_Toggle.ogg"
 
 //Selaco
-selacoflashlightOn        SELFLAON
-selacoflashlightOff       SELFLOFF
+selacoflashlightOn        "Sounds/Selaco_On.ogg"
+selacoflashlightOff       "Sounds/Selaco_Off.ogg"
 
 //DarkDoomZ
-darkdoomzflashlightToggle DDZFTGLE
+darkdoomzflashlightToggle "Sounds/DarkDoomZ_On.ogg"
 $pitchset darkdoomzflashlightToggle 0.9 1.1
 
 //Prey '06
-preyflashlightOn          PREYFLON
-preyflashlightOff         PREYFOFF
+preyflashlightOn          "Sounds/PreyLighter_On.ogg"
+preyflashlightOff         "Sounds/PreyLighter_Off.ogg"
 
 //HL OpForce
-op4flashlightOn           OP4FLAON
-op4flashlightOff          OP4FLOFF
+op4flashlightOn           "Sounds/OpposingForce_On.ogg"
+op4flashlightOff          "Sounds/OpposingForce_Off.ogg"
 
 //Selaco
-selaco2flashlightOn       SE2FLAON
-selaco2flashlightOff      SE2FLOFF
+selaco2flashlightOn       "Sounds/SelacoAlt_On.ogg"
+selaco2flashlightOff      "Sounds/SelacoAlt_Off.ogg"
 
 //LiTDOOM (When the Doom is Lit :flushed:)
-litdoomflashlightOn       LITFLAON
-litdoomflashlightOff      LITFLOFF
+litdoomflashlightOn       "Sounds/LiTDoom_On.ogg"
+litdoomflashlightOff      "Sounds/LiTDoom_Off.ogg"
+
+//Brutal Doom
+brutaldoomflashlightOn    "Sounds/BrutalDoom_On.ogg"
+brutaldoomflashlightOff    "Sounds/BrutalDoom_Off.ogg"

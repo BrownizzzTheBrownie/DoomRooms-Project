@@ -1,0 +1,115 @@
+ACTOR Trenchgun : Weapon
+{
+    +FLOORCLIP
+	+NOAUTOFIRE
+    +Ammo_CheckBoth
+	Tag "1897 Trenchgun"
+    Weapon.AmmoType1 "ShotgunLoaded"
+	Weapon.AmmoType2 "Shell"
+	Weapon.AmmoGive2 8
+    Weapon.AmmoUse 1
+	Weapon.SlotNumber 3
+    Weapon.KickBack 100
+    Inventory.PickupSound "Misc/w_pkup" 
+    Obituary "%o was sent back by %k's Trenchgun."
+    Inventory.PickupMessage "Got the Trenchgun!"
+    Decal "BulletChip"
+    States
+    {
+    Spawn:
+        TREP A -1
+        Loop
+    Ready:
+        TREN A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+		TREN A 0 A_JumpifInventory("TrenchRespect", 0, "Respect1")
+	    loop
+      
+    Deselect:
+        TREN A 1 A_Lower
+        NULL AA 0 A_Lower
+        Loop
+    Select:
+        TREN A 1 A_Raise
+        NULL AA 0 A_Raise
+        Loop
+    Fire:
+        TREN A 0 A_JumpIf(CountInv("ShotgunLoaded") == 0,"DryFire")
+		TREN A 0 A_JumpIfInventory("TrenchFired",1,"SlamFire")
+		Goto Shot
+	Shot:
+        TREN B 0 A_PlayWeaponSound("TRNCFIR")
+        TREN B 1 BRIGHT A_FireBullets(3.5, 3.5, 8, 5, "BulletPuff", 1)
+        TREN C 1 BRIGHT
+		TREN D 2 A_GiveInventory("TrenchFired",1)
+		TREN D 1 A_WeaponReady
+		TREN E 2 A_WeaponReady
+		TREN F 6 A_WeaponReady
+        Goto Pump
+	Pump:
+		TREN GH 1
+		TREN IJ 2 A_TakeInventory("TrenchFired",99)
+		NULL A 0 A_PlaySound("TRNCREL")
+		TREN KM 2
+		TREN NMLK 1
+		TREN JIHG 2
+		TREN A 2
+		TREN A 0 A_Refire("Fire")
+        goto Ready
+	SlamFire:
+	    TREN B 0 A_PlaySound("TRNCRE2",CHAN_7)
+		TREN B 0 A_TakeInventory("TrenchFired",99)
+	    TREO A 1
+		TREO C 3
+		TREO BD 2
+        TREN B 0 A_PlayWeaponSound("TRNCFIR")
+        TREN B 1 BRIGHT A_FireBullets(7.5, 7.5, 8, 6, "BulletPuff", 1)
+        TREN C 1 BRIGHT
+		TREN D 2 A_GiveInventory("TrenchFired",1)
+		TREN D 1 A_WeaponReady
+		TREN E 2 A_WeaponReady
+		TREN F 6 A_WeaponReady
+		Goto Pump
+	DryFire:
+	   TREN E 0 A_PlaySound("TRNCDRY",CHAN_7)
+	   TREN D 1
+	   TREN F 4
+	   Goto Reload
+    Reload:
+  TREN A 0 A_JumpIfInventory("ShotgunLoaded", 8, 2)
+  TREN A 0 A_JumpIfInventory("Shell", 1, "ReloadWork")
+  TREN A 1 
+  Goto Ready
+	ReloadWork:  
+  TREN E 2
+  TRER A 2 A_TakeInventory("TrenchFired",99)
+  TRER B 2
+  ReloadLoop:
+  TRER C 1
+  TRER F 0 A_PlayWeaponSound("TRNCLOA")
+  TRER D 2
+  TRER E 2 
+  TRER F 0 A_TakeInventory("Shell", 1)
+  TRER F 0 A_GiveInventory("ShotgunLoaded", 1)
+  TRER B 4
+  TRER F 0 A_JumpIfInventory("ShotgunLoaded", 8, "ReloadFinish")
+  TRER F 0 A_JumpIfInventory("Shell", 1, "ReloadLoop")
+  Goto ReloadFinish
+  ReloadFinish: 
+  TRER B 2
+  TRER A 2
+  TREN E 2
+  Goto Ready
+  }
+}
+
+ACTOR ShotgunLoaded : Ammo
+{
+   +IGNORESKILL
+   Inventory.Amount 0
+   Inventory.MaxAmount 8
+   Ammo.BackpackAmount 0
+   Ammo.BackpackMaxAmount 8
+  }
+
+ACTOR TrenchFired: Inventory { Inventory.MaxAmount 1 }
+ACTOR TrenchRespect: Inventory { Inventory.MaxAmount 1 }

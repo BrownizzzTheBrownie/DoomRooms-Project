@@ -109,3 +109,20 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+
+//Shader
+[en]
+The author of the mod - DRON12261.
+
+The shader works on the GZDoom and LZDoom ports.
+For best effect, it is not recommended to use both 
+CRT effect and VHS effect at the same time. It is also 
+recommended to play at 640x480 resolution.
+
+The shader mod code was based on the following sources:
+1) FixingPixelArt by Timothy Lottes
+https://www.shadertoy.com/view/XsjSzR 
+2) VHS tape noise by Vladimir Storm
+https://www.shadertoy.com/view/MlfSWr
+3) VHS tape effect by Gaktan
+https://www.shadertoy.com/view/Ms3XWH

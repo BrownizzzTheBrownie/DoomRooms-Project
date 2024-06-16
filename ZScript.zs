@@ -18,11 +18,52 @@ version "4.10.0"
 //Lean
 //#Inlcude "ZSCripts/Lean.zs"
 
-//Flashlight++
-#include "ZScripts/Holder_FlashlightPlusPlus.zs"
-#include "ZScripts/Handler_FlashlightPlusPlus.zs"
-#include "ZScripts/Light_FlashlightPlusPlus.zs"
-#include "ZScripts/Nash_Tooltips.zs"
+//Flashlight ++
+#include "ZScripts/FPP_Holder.zs"
+#include "ZScripts/FPP_Handler.zs"
+#include "ZScripts/FPP_Light.zs"
+
+//Weapons
+#Include "ZScripts/Weapons/Magnum.zs"
+
+//Shader
+#Include "Script/ShaderHandler"
+
+Class BulletCasing : Actor
+{
+	Default
+	{
+		Height 1;
+		Radius 1;
+		Scale 0.45;
+		Mass 1;
+	}
+	States
+	{
+		Spawn:
+			CAS2 A 0;
+			CAS2 A Random(2,6);
+			CAS2 A 1 A_PlaySound("DSCASING",CHAN_BODY, 2.0);
+			CAS2 A 0 A_Jump(192, "Casing2", "Casing3", "Casing4");
+			goto Casing1;
+		Casing1:
+			// Adjust this "4" to lower amount for faster disappearance of casing, or higher amount.
+			CAS2 A 4 A_Fadeout(0.01);
+			loop;
+		Casing2:
+			// Adjust this "4" to lower amount for faster disappearance of casing, or higher amount.
+			CAS2 B 4 A_Fadeout(0.01);
+			loop;
+		Casing3:
+			// Adjust this "4" to lower amount for faster disappearance of casing, or higher amount.
+			CAS2 C 4 A_Fadeout(0.01);
+			loop;
+			// Adjust this "4" to lower amount for faster disappearance of casing, or higher amount.
+		Casing4:
+			CAS2 D 4 A_Fadeout(0.01);
+			loop;
+	}
+}
 
 class LeaningHandler : EventHandler
 {

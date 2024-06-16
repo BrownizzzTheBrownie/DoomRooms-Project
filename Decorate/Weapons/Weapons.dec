@@ -8,7 +8,7 @@
 #Include "Decorate/Weapons/Pistols/UACPistol.dec"
 
 //Slot3
-
+#Include "Decorate/Weapons/Shotguns/Trenchgun.dec"
 
 //Slot4
 

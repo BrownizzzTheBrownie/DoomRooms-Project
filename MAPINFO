@@ -5,6 +5,7 @@ DoomEdNums
 
 Gameinfo
 {
+	AddEventHandlers = "ShaderHandler"
 	AddEventHandlers = "PDAEventHandler"
 	AddEventHandlers = "ShaderHUDHandler"
 	AddEventHandlers = "LeaningHandler"

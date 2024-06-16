@@ -17,6 +17,22 @@ alias -lean_right "netevent unlean_right";
 defaultbind q +lean_left
 defaultbind e +lean_right
 
+/* Flashlight++, an extended version of Flashlight+ with extra customizability.
+Copyright (C) 2024  generic name guy
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. */
+
 //0 = Helmet
 //1 = Right Shoulder
 //2 = Left Shoulder
@@ -32,7 +48,11 @@ defaultbind f FPP_Toggle
 
 //Default Preset
 
-alias cl_flashlight_defaultpreset "set cl_flashlight_plus_color 7F7F7F; set cl_flashlight_plus_location 0; set cl_flashlight_plus_intensity 256; set cl_flashlight_plus_inner 25.0; set cl_flashlight_plus_outer 50.0; set cl_flashlight_plus_second_beam true; set cl_flashlight_plus_color_2_mult 1.0; set cl_flashlight_plus_intensity_2 512; set cl_flashlight_plus_inner_2 8.0; set cl_flashlight_plus_outer_2 16.0"
+alias cl_flashlight_defaultpreset "set cl_flashlight_plus_color 7878B4; set cl_flashlight_plus_location 2; set cl_flashlight_plus_intensity 512; set cl_flashlight_plus_inner 32.0; set cl_flashlight_plus_outer 40.0; set cl_flashlight_plus_second_beam true; set cl_flashlight_plus_color_2_mult 2.0; set cl_flashlight_plus_intensity_2 512; set cl_flashlight_plus_inner_2 0.0; set cl_flashlight_plus_outer_2 15.0"
+
+//Old Default Preset
+
+alias cl_flashlight_olddefaultpreset "set cl_flashlight_plus_color 7F7F7F; set cl_flashlight_plus_location 0; set cl_flashlight_plus_intensity 256; set cl_flashlight_plus_inner 25.0; set cl_flashlight_plus_outer 50.0; set cl_flashlight_plus_second_beam true; set cl_flashlight_plus_color_2_mult 1.0; set cl_flashlight_plus_intensity_2 512; set cl_flashlight_plus_inner_2 8.0; set cl_flashlight_plus_outer_2 16.0"
 
 //HL2 Preset
 
@@ -75,3 +95,6 @@ alias cl_flashlight_metadoompreset "set cl_flashlight_plus_color FFFFFF; set cl_
 //NVG Preset
 
 alias cl_flashlight_op4nvgpreset "set cl_flashlight_plus_color 50C14D; set cl_flashlight_plus_location 0; set cl_flashlight_plus_intensity 748; set cl_flashlight_plus_inner 85.0; set cl_flashlight_plus_outer 147.0; set cl_flashlight_plus_second_beam true; set cl_flashlight_plus_color_2_mult 1.30; set cl_flashlight_plus_intensity_2 275; set cl_flashlight_plus_inner_2 25.0; set cl_flashlight_plus_outer_2 50.0"
+
+//Shader
+Alias SHA_ResetToDefault "SH_ShaderEnable true; SH_VHSEnable true; SH_VHSRange 0.05; SH_VHSNoiseQuality 300.0; SH_VHSNoiseIntensity 0.001; SH_VHSOffsetIntensity 0.002; SH_VHSColorOffsetIntensity 0.2; SH_VHSLineCount 250; SH_VHSLineSpeed 3; SH_VHSLineEnable true; SH_CRTEnable false; SH_CRTHardScan 8; SH_WarpEnable true; SH_WarpMultX 32; SH_WarpMultY 24; SH_GrainIntensity 0.2; SH_Contrast 1.0; SH_Saturation 1.0;"

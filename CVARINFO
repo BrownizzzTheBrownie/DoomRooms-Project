@@ -4,25 +4,40 @@ user bool LR_invul = true;
 user float cl_leanangle = 22.5;
 user bool cl_strafelean = false;
 
+/* Flashlight++, an extended version of Flashlight+ with extra customizability.
+Copyright (C) 2024  generic name guy
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Lesser General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Lesser General Public License for more details.
+
+You should have received a copy of the GNU Lesser General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>. */
 
 //Flashlight+
 
-user color cl_flashlight_plus_color = "7F 7F 7F";
-user int cl_flashlight_plus_intensity = 256;
+user color cl_flashlight_plus_color = "78 78 B4";
+user int cl_flashlight_plus_intensity = 512;
 
-user float cl_flashlight_plus_inner = 25.0;
-user float cl_flashlight_plus_outer = 50.0;
+user float cl_flashlight_plus_inner = 32.0;
+user float cl_flashlight_plus_outer = 40.0;
 
 user bool cl_flashlight_plus_second_beam = true;
 
-user float cl_flashlight_plus_color_2_mult = 1.0;
+user float cl_flashlight_plus_color_2_mult = 2.0;
 
 user int cl_flashlight_plus_intensity_2 = 512;
 
-user float cl_flashlight_plus_inner_2 = 8.0;
-user float cl_flashlight_plus_outer_2 = 16.0;
+user float cl_flashlight_plus_inner_2 = 0.0;
+user float cl_flashlight_plus_outer_2 = 15.0;
 
-user int cl_flashlight_plus_location = 0;
+user int cl_flashlight_plus_location = 2;
 
 //Flashlight++
 
@@ -34,3 +49,32 @@ user int cl_flashlight_plus_plus_custpos_y = 0;
 user int cl_flashlight_plus_plus_custpos_z = 0;
 
 user bool cl_flashlight_plus_plus_alertmonsters = true;
+
+user int cl_flashlight_plus_plus_sway_type = 0;
+user float cl_flashlight_plus_plus_sway_spring = 1.0;
+user float cl_flashlight_plus_plus_sway_damping = 1.0;
+user int cl_flashlight_plus_plus_sway_inertia = 1;
+
+user bool cl_flashlight_plus_plus_attenuated = false;
+user bool cl_flashlight_plus_plus_noise = false;
+user float cl_flashlight_plus_plus_noise_min = 0.9;
+
+//Shader
+user bool 	SH_ShaderEnable = true;
+user bool 	SH_VHSEnable = true;
+user float 	SH_VHSRange = 0.05;
+user float 	SH_VHSNoiseQuality = 300.0;
+user float 	SH_VHSNoiseIntensity = 0.001;
+user float 	SH_VHSOffsetIntensity = 0.002;
+user float 	SH_VHSColorOffsetIntensity = 0.2;
+user float 	SH_VHSLineCount = 250;
+user float 	SH_VHSLineSpeed = 3;
+user bool 	SH_VHSLineEnable = true;
+user bool 	SH_CRTEnable = false;
+user int 	SH_CRTHardScan = 8;
+user bool 	SH_WarpEnable = true;
+user int 	SH_WarpMultX = 32;
+user int 	SH_WarpMultY = 24;
+user float 	SH_GrainIntensity = 0.2;
+user float 	SH_Contrast = 1.0;
+user float 	SH_Saturation = 1.0;

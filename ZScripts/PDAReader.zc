@@ -100,7 +100,7 @@ class PDAReader : Inventory
 	States
 	{
 	Spawn:
-		PRDR A -1;
+		DRBF A -1;
 		Stop;
 	}
 }

@@ -49,7 +49,7 @@ extend class PDAMenu
 			Font.CR_Black,
 
 			// Background image
-			"Graphics/PDA/PDA Background.png",
+			"PDABackground.png",
 
 			// Background image position
 			(0, 0),

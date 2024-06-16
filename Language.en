@@ -1,6 +1,27 @@
 [enu default]
 //This will apply for English and if there is no localization for the user's language.
-//When i was trying to translate this to portuguese it always used LANGUAGE.PTB for some reason even if it was set to English 
+
+//Shader
+MOD_INTRO = "VHS&CRT Shader Mod v2 by DRON12261";
+M_MODSHADER_TITLE = "Shader Settings";
+CV_SHENABLE_OPTION = "Enable Shader";
+CV_VHSENABLE_OPTION = "Enable VHS effect";
+CV_VHSNOISEQUAL_OPTION = "Noise Quality (VHS)";
+CV_VHSNOISEINT_OPTION = "Noise Offset (VHS)";
+CV_VHSOFFINT_OPTION = "Offset Intensity (VHS)";
+CV_VHSCOLOROFF_OPTION = "Color Offset (VHS)";
+CV_VHSLINEEN_OPTION = "Enable White Lines (VHS)";
+CV_VHSLINECNT_OPTION = "Number of Lines (VHS)";
+CV_VHSLINESPD_OPTION = "Line Speed ​​(VHS)";
+CV_CRTENABLE_OPTION = "Enable CRT effect";
+CV_CRTHARDSCAN_OPTION = "Line Size (CRT)";
+CV_WARPENABLE_OPTION = "Enable Warp Screen Effect";
+CV_WARPMULTX_OPTION = "Warp Screen Offset X";
+CV_WARPMULTY_OPTION = "Warp Screen Offset Y";
+CV_GRAININT_OPTION = "Film Grain";
+CV_CONTRAST_OPTION = "Contrast (shader)";
+CV_SATURATION_OPTION = "Saturation";
+AL_RESETSHADERSETTINGS = "Reset settings";
 
 //Position shit
 FPP_HELM = "Helmet";
@@ -19,6 +40,7 @@ FPP_YDESC = "< Back/Forward >";
 FPP_ZPOS = "Z Coordinate";
 FPP_ZDESC = "< Down/Up >";
 FPP_IFCUST = "If the setting above is set to \"Custom\", you will be able to tweak the beam position below";
+FPP_TWEAKPOS = "Tweak custom position";
 
 //Settings and shit
 FPP_TITOP = "Flashlight++ Options";
@@ -49,7 +71,6 @@ FPP_UINS = "Uninstall Flashlight++";
 FPP_PRTIT = "Flashlight Presets";
 //FPP_PRSTAPPL = "Preset applied, turn the flashlight off then on again to see changes";
 FPP_PLAYCLIK = "Play \"Click\" Sound";
-FPP_GZDOPT = "Related GZDoom Options";
 FPP_DYNALIGHTS = "Enables Dynamic Lights, turn this on if you want to see the flashlight!";
 FPP_FPSCAP = "Caps your FPS to 35, the flashlight won't look jittery, at the cost of framerate.";
 FPP_YOUSURE = "Are you sure you want to apply this preset? This will overwrite your current flashlight settings!";
@@ -57,6 +78,7 @@ FPP_YUSURE2 = "Are you sure you want to remove Flashlight++ from this save file?
 
 //Presets 4 localization1!1!1!1!!! (shit)
 FPP_DEFA = "Default";
+FPP_OLDDEFAULT = "Old Default (Flashlight+)";
 FPP_BLUMGK = "Blue Magic (Hexen/Heretic)";
 FPP_GRNMGK = "Green Magic (Hexen/Heretic)";
 FPP_LAMP = "Lamp";
@@ -67,7 +89,7 @@ FPP_HARD = "Cel-Light 2000";
 FPP_METADOOM = "MetaDOOM Pistol flashlight";
 FPP_OP4NVG = "Night Vision";
 
-//Sound Effects
+//Sound Effects shit
 FPP_DEFCLICK = "Default Click (Black Mesa)";
 FPP_OLDCLICK = "Old Click (BM + HL2)";
 FPP_ALTCLICK = "Alternate Click (Halo Doom)";
@@ -78,8 +100,34 @@ FPP_PREYFLME = "Lighter (Prey '06)";
 FPP_OP4NVSND = "Night Vision Tick (HL: OP4)";
 FPP_FUUTURE2 = "Clicky Clack (Selaco)"; //i am running out of names
 FPP_LITFRONG = "Springy Click (LiTDOOM)"; //this is gonna be a nightmare to translate to portuguese, fuck
+FPP_BDV21SOUND = "Alternate Alternate Click (Brutal Doom)";
+
+//Sway shit
+FPP_INERTIA = "Inertia";
+FPP_INERTIADESC = "How fast the light sways";
+FPP_SPRING = "Spring";
+FPP_SPRINGDESC = "How much the light bounces back when swaying";
+FPP_DAMPING = "Damping";
+FPP_DAMPINGDESC = "How fast the light recovers from spring";
+
+FPP_SWAY = "Light Sway";
+FPP_NOSWAY = "No Sway";
+FPP_SPRINGY = "Springy";
+FPP_STIFF = "Stiff";
+FPP_SWAYCUSTOM = "Custom";
+FPP_TWEAKSWAY = "Tweak custom sway";
+
+//Advanced settings
+FPP_ADVANCED = "Advanced options";
+FPP_ATTENUATED = "Attenuate beam";
+FPP_ATTENUATED_DESC = "Makes the light a bit more realistic, if not dimmer";
+FPP_NOISE = "Noise";
+FPP_NOISE_DESC = "The light flickers according to the minimum set in the option below";
+FPP_NOISE_WARNING = "\cgPHOTOSENSITIVITY WARNING: \c-The light will flicker, which might cause problems for some";
+FPP_NOISE_MIN = "Minimum noise";
 
 //I should have called this "Flashlight#"
+
 
 //==============================================================================
 //
@@ -246,35 +294,21 @@ PDA_ZStation_Text =
 //
 //==============================================================================
 
-PDA_Calln1_Title = "Call n°1 - Brownizzz Barithel, 'Louis-Philippe Barithel'"; 
+PDA_Calln1_Title = "Call n°1 - 'Doctor' Brown, 'B-Tech Owner'"; 
 PDA_Calln1_Text =
 	"[BEGIN CALL]"
 	"\n\n"
-	"[LP]: Hey it's Louis-Philippe, I hope it's not too late."
+	"[Brown]: You've reach the 'Doctor', how may I help you ?"
 	"\n\n"
-	"[BB]: No It's fine don't worry. What's up, are you alright ?"
+	"[Owner]: You still trying to win your life. Don't you ?"
 	"\n\n"
-	"[LP]: Yeah, it's not me, it's my mom. She Knocked out cold and I have no idea why. I'm on my way to the E.R. (Emergency Room), but could you do me a favor"
+	"[Brown]: Who are you ? And how do you know who am I ?"
 	"\n\n"
-	"[BB]: Yeah of course, what is it ?"
+	"[Owner]: Don't seem to recognize an old friend."
 	"\n\n"
-	"[LP]: I just need you to come over and turn on the cameras we have set up. You know the ones we installed after we were robbed ?(Event yet to be investigated)."
+	"[Brown]: What do you want ! Even the B-Tech is not enough for you !"
 	"\n\n"
-	"[BB]: Oh year. Would you mind if I asked why ?"
-	"\n\n"
-	"[LP]: Well she screamed really loud right before I found her on the ground. I just-"
-	"\n\n"
-	"[BB]: Well do you have your doors and windows locked like what the broadcast told us to do ?"
-	"\n\n"
-	"[LP]: Yeah that's the weird part. Maybe she saw something ? I don't know."
-	"\n\n"
-	"[BB]: Alright I mean it shouldn't be too bad. I'm just gonna switch themon and get otta there though. You know how I feel about your house."
-	"\n\n"
-	"[LP]: Yeah that's fine. One last thing. Try to get a good view of the back hallway if you don't mind."
-	"\n\n"
-	"[BB]: Okay."
-	"\n\n"
-	"[LP]: Alright I'm almost at the hospital. Thank you."
+	"[Owner]: Well I need something "
 	"\n\n"
 	"[CALL ENDS]";
 
@@ -302,7 +336,7 @@ PDA_CameraReportn1_Text =
 	"[WARNING FOOTS STEP DETECTED]"
 	"\n\n"
 	"[AUDIO]"
-	"Where did you go, Brownizzz"
+	"Where did you go, 'Doctor'."
 	"\n\n"
 	"[CAMERA 1 OFF]"
 	"\n\n"

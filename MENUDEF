@@ -28,6 +28,7 @@ OptionMenu "LeaningOptions"
 	Slider "Lean Angle", "cl_leanangle", 1.0, 90.0, 0.5
 	StaticText "The default and recommended lean angle is 22.5"
 }
+
 OptionValue LocationOptions 
 {
 	0, "$FPP_HELM"
@@ -35,8 +36,15 @@ OptionValue LocationOptions
 	2, "$FPP_LSHO"
 	3, "$FPP_CENT"
 	4, "$FPP_GUN"
-	5, "$FPP_DDZHAND"
-	6, "$FPP_CUSTPOS"
+	5, "$FPP_CUSTPOS"
+}
+
+OptionValue SwayOptions 
+{
+	0, "$FPP_NOSWAY"
+	1, "$FPP_SPRINGY"
+	2, "$FPP_STIFF"
+	3, "$FPP_SWAYCUSTOM"
 }
 
 OptionValue FlashlightSoundOptions 
@@ -51,17 +59,16 @@ OptionValue FlashlightSoundOptions
 	7, "$FPP_PREYFLME"
 	8, "$FPP_FUUTURE2"
 	9, "$FPP_LITFRONG"
+	10, "$FPP_BDV21SOUND"
 }
 
 OptionMenu "FlashlightPlusOptions" 
 {
 	Title "$FPP_TITL"
-    Class "NashTTFPPOptions"
 
 	StaticText ""
     
     Submenu "$FPP_PRST","FlashlightPlusPresets"
-    Submenu "$FPP_GZDOPT","FlashlightPlusPlusGZDoomOptions"
 
 	StaticText ""
     
@@ -109,22 +116,20 @@ OptionMenu "FlashlightPlusOptions"
 	StaticText ""
 	
 	Option "$FPP_POS", "cl_flashlight_plus_location", "LocationOptions"
+	Submenu "$FPP_TWEAKPOS", "TweakPosition"
 	
 	StaticText ""
-	StaticText "$FPP_IFCUST"
-	StaticText ""
 	
-	Slider "$FPP_XPOS", "cl_flashlight_plus_plus_custpos_x", -32, 32, 1
-	StaticText "$FPP_XDESC"
-	Slider "$FPP_YPOS", "cl_flashlight_plus_plus_custpos_y", -32, 32, 1
-	StaticText "$FPP_YDESC"
-	Slider "$FPP_ZPOS", "cl_flashlight_plus_plus_custpos_z", -32, 32, 1
-	StaticText "$FPP_ZDESC"
-
+	Option "$FPP_SWAY", "cl_flashlight_plus_plus_sway_type", "SwayOptions"
+	Submenu "$FPP_TWEAKSWAY", "TweakSway"
+	
 	StaticText ""
 
 	SafeCommand "$FPP_UINS","netevent flashlight_plus_uninstall", "$FPP_YUSURE2"
 	StaticText "$FPP_WARN","DarkRed"
+	StaticText ""
+	
+	Submenu "$FPP_ADVANCED", "AdvancedFlashlightSettings"
 }
 
 AddOptionMenu "OptionsMenu"
@@ -154,6 +159,10 @@ OptionMenu "FlashlightPlusPresets" {
 	Title "Flashlight Presets"
 	
     SafeCommand "$FPP_DEFA", "cl_flashlight_defaultpreset", "$FPP_YOUSURE"
+	
+	StaticText ""
+	
+	SafeCommand "$FPP_OLDDEFAULT", "cl_flashlight_olddefaultpreset", "$FPP_YOUSURE"
 	
 	StaticText ""
 	
@@ -197,19 +206,94 @@ OptionMenu "FlashlightPlusPresets" {
     SafeCommand "$FPP_OP4NVG", "cl_flashlight_op4nvgpreset", "$FPP_YOUSURE"
 }
 
-OptionMenu "FlashlightPlusPlusGZDoomOptions"
+optionmenu TweakSway
 {
-    Title "$FPP_GZDOPT"
-    Class "NashTTFPPOptions"
-    
-    Option "$TCMNU_DYNLIGHTS",					"r_dynlights", "OnOff"
-	Option "$GLLIGHTMNU_LIGHTSENABLED",			gl_lights,				"OnOff"
-    
-    StaticText "$FPP_DYNALIGHTS","Gray"
-    
-    StaticText ""
-    
-    Option "$DSPLYMNU_CAPFPS",					"cl_capfps", "OffOn"
-   
-    StaticText "$FPP_FPSCAP","Gray"
+	Title "$FPP_TWEAKSWAY"
+	
+	Slider "$FPP_SPRING", "cl_flashlight_plus_plus_sway_spring", 0.1, 1.0, 0.01, 2
+	StaticText "$FPP_SPRINGDESC"
+	statictext ""
+	
+	Slider "$FPP_DAMPING", "cl_flashlight_plus_plus_sway_damping", 0.1, 1.0, 0.01, 2
+	StaticText "$FPP_DAMPINGDESC"
+	statictext ""
+	
+	Slider "$FPP_INERTIA", "cl_flashlight_plus_plus_sway_inertia", -10, 10, 1, 0
+	StaticText "$FPP_INERTIADESC"
+}
+
+OptionMenu TweakPosition
+{
+	Title "$FPP_TWEAKPOS"
+	
+	Slider "$FPP_XPOS", "cl_flashlight_plus_plus_custpos_x", -32, 32, 1
+	StaticText "$FPP_XDESC"
+	statictext ""
+	
+	Slider "$FPP_YPOS", "cl_flashlight_plus_plus_custpos_y", -32, 32, 1
+	StaticText "$FPP_YDESC"
+	statictext ""
+	
+	Slider "$FPP_ZPOS", "cl_flashlight_plus_plus_custpos_z", -32, 32, 1
+	StaticText "$FPP_ZDESC"
+}
+
+optionmenu AdvancedFlashlightSettings
+{
+	Title "$FPP_ADVANCED"
+	
+	Option "$FPP_ATTENUATED", "cl_flashlight_plus_plus_attenuated", "YesNo"
+	StaticText "$FPP_ATTENUATED_DESC"
+	StaticText ""
+	Option "$FPP_NOISE", "cl_flashlight_plus_plus_noise", "YesNo"
+	StaticText "$FPP_NOISE_DESC"
+	slider "$FPP_NOISE_MIN", "cl_flashlight_plus_plus_noise_min", 0.5, 0.99, 0.01, 2
+	StaticText "$FPP_NOISE_WARNING"
+}
+
+//Shader
+AddOptionMenu "OptionsMenu"
+{
+	StaticText "$MOD_INTRO"
+	SubMenu "$M_MODSHADER_TITLE","ModShader"
+}
+
+OptionMenu "ModShader"
+{
+	Title "$M_MODSHADER_TITLE"
+	
+	Option "$CV_SHENABLE_OPTION", "SH_ShaderEnable", "OnOff"
+	
+	StaticText ""
+	
+	Option "$CV_VHSENABLE_OPTION", "SH_VHSEnable", "OnOff"
+	Slider "$CV_VHSNOISEQUAL_OPTION", "SH_VHSNoiseQuality", 1.0, 500.0, 0.1, 1
+	Slider "$CV_VHSNOISEINT_OPTION", "SH_VHSNoiseIntensity", 0.0, 0.015, 0.001, 3
+	Slider "$CV_VHSOFFINT_OPTION", "SH_VHSOffsetIntensity", 0.0, 0.05, 0.001, 3
+	Slider "$CV_VHSCOLOROFF_OPTION", "SH_VHSColorOffsetIntensity", 0.0, 2.0, 0.1, 1
+	Option "$CV_VHSLINEEN_OPTION", "SH_VHSLineEnable", "OnOff"
+	Slider "$CV_VHSLINECNT_OPTION", "SH_VHSLineCount", 250, 10000, 1, 0
+	Slider "$CV_VHSLINESPD_OPTION", "SH_VHSLineSpeed", 1.0, 10.0, 0.1, 1
+	
+	StaticText ""
+	
+	Option "$CV_CRTENABLE_OPTION", "SH_CRTEnable", "OnOff"
+	Slider "$CV_CRTHARDSCAN_OPTION", "SH_CRTHardScan", 1, 100, 1, 0
+	
+	StaticText ""
+	
+	Option "$CV_WARPENABLE_OPTION", "SH_WarpEnable", "OnOff"
+	Slider "$CV_WARPMULTX_OPTION", "SH_WarpMultX", 1, 100, 1, 0
+	Slider "$CV_WARPMULTY_OPTION", "SH_WarpMultY", 1, 100, 1, 0
+	Slider "$CV_GRAININT_OPTION", "SH_GrainIntensity", 0.0, 1.0, 0.01, 2
+	Slider "$CV_CONTRAST_OPTION", "SH_Contrast", 0.0, 5.0, 0.01, 2
+	Slider "$CV_SATURATION_OPTION", "SH_Saturation", 0.0, 3.0, 0.01, 2
+	
+	StaticText ""
+	
+	Command "$AL_RESETSHADERSETTINGS", "SHA_ResetToDefault"
+	
+	StaticText ""
+	
+	StaticText "$MOD_INTRO"
 }
