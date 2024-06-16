@@ -6,9 +6,11 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
 - Do the basic entiies => not started
 - Implement a basic sanity bar => no started
+- Fix PDA Background => idk how
 
 
 #Progression
+
 #Levels
 - Intro Level - "BrownTech β Labs" => not finished
 - Level 0 - "Tutorial Level" => not finished
