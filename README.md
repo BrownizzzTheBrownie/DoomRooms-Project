@@ -1,5 +1,5 @@
 # DoomRooms
-a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http://backrooms-wiki.wikidot.com/ ). If you want to help me for idk reasons or to chat about this project, my discord: brownizzz (A server will be made later, maybe when Level 0 will be finished maybe not) => https://discord.gg/XXXXXXXXXX
+a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http://backrooms-wiki.wikidot.com/ ). If you want to help me for idk reasons or to chat about this project, my discord: brownizzz #BrownizzzTheBrownie (A server will be made later, maybe when Level 0 will be finished maybe not) => https://discord.gg/XXXXXXXXXX
 
 
 #Goal for now
