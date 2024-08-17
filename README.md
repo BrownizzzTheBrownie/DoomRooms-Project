@@ -4,8 +4,8 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 
 #Goal for now
 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
-- Do the basic entiies => not started
-- Implement a basic sanity bar => no started
+- Do the basic entiies => basic smiler for now with no a proper behavior
+- Implement a basic sanity bar => done but not uploade
 - Fix PDA Background => idk how
 
 
