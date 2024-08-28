@@ -5,7 +5,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 #Goal for now
 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
 - Do the basic entiies => basic smiler for now with no a proper behavior
-- Implement a basic sanity bar => not finished
+- Implement a basic sanity bar => base finished with item n°1 - Almond Water 
 - Fix PDA Background => idk how and maybe do a new pda without the devkit with zforms from scratch ?
 
 
