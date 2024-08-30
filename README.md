@@ -74,6 +74,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Unnumberd Level - "A Long Forgotten Exclamation..." => not started
 - Unnumberd Level - "The Basement" => not started
 - Unnumberd Level - "The Blue Chaneel" => not started
+- Unumbered Level - "The Broken" => not started
 - Unnumberd Level - "The Forgotten Forest" => not started
 - Unnumberd Level - "The Foundy" => not started
 - Unnumberd Level - "The Frontrooms" => not started (actually do you really thinks I need to do this level really ?)
@@ -96,9 +97,11 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Unnumberd Level - "Our Moon" => not started
 - Unnumberd Level - "PA98" => not started
 - Unnumberd Level - "Recurring Dreams" => not started
+- Unumbered Level - "Serenity" => not started
 - Unnumberd Level - "The Serpent's Void" => not started
 - Unnumberd Level - "TH3 SH4DY GR3Y" => not started
 - Unnumberd Level - "Hephaetus' Forge" => not started
+    - Unumbered Level - "Remords"
 - Unnumberd Level - "T!!HE VO!!ID??" => not started
 - Unnumberd Level - "The World Factory" => not started
 
@@ -161,9 +164,19 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 
 #Objects List
 - Object 1 - "Almond Water"
+- Object 2 - "Level Key"
+- Object 3 - "Smiler Repellent" => Wiki revision
+- Object 4 - "Deuclidators"
+- Object 5 - "Candy"
+- Object 6 - "The Mirror"
+- Object 7 - "Memory Jar"
+- Object 8 - "Lamps"
+- Object 9 - "Dumb Gum" (They bleed onto the desert ever so nicely)
+- Object 10 - "Scarecrows"
 
 
 #P.O.I. (Person of Interest) List
+
 
 
 #Group List
@@ -182,3 +195,6 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - The U.E.C.
 
 #Unofficial things
+
+#P.O.I.
+- "The Doctor" Browny alias [NO DATA]
