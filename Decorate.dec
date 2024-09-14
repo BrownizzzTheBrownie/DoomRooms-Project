@@ -54,3 +54,153 @@ ACTOR DistanceCheckerCeiling : FastProjectile
 			Stop
 	}
 }
+
+ACTOR OfficeChairDoomGreen 12340
+{
+	//$Title Office Chair Doom Green
+	//$Category Obstacles/Chairs
+	//$IsDecoration
+
+	Var int user_spincounter;
+	Var int user_spinangle;
+
+	Height 26
+	Radius 14
+	Health 0x7FFFFFFF
+	Mass 400
+	MaxStepHeight 0
+	PainChance 192
+	
+	+SOLID
+	+DROPOFF
+	+SLIDESONWALLS
+	+PUSHABLE
+	+CANPASS
+	+SHOOTABLE
+	+NOBLOOD
+	//+BUDDHA // Disabled for Zandronum compatibility
+	+NOTAUTOAIMED
+  
+		States
+		{
+			Spawn:
+				OCHR A 0 NoDelay A_SetUserVar("user_spincounter", 50)
+				OCHR A 0 A_SetUserVar("user_spinangle", 40)
+			Seat:
+				OCHR A -1
+				Loop
+			Pain:
+				OCHR A 0 A_SetUserVar("user_spincounter", 50)
+				OCHR A 0 A_SetUserVar("user_spinangle", 40)
+			Spin:
+				OCHR A 1 A_SetAngle(user_spinangle + angle)
+				OCHR A 0 A_SetUserVar("user_spincounter", user_spincounter-1)
+				OCHR A 0 A_SetUserVar("user_spinangle", user_spinangle*0.93)
+				OCHR A 0 A_JumpIf(user_spincounter==0,"Spawn")
+				Loop
+		}
+}
+
+// STANDARD RGB VALUE TRANSLATIONS
+ACTOR OfficeChairBlack : OfficeChairDoomGreen 12341
+{
+	//$Title Office Chair Black
+	Translation "112:127=[64,64,64]:[0,0,0]" // Old format RGB translations for Zandronum compatibility
+}
+
+ACTOR OfficeChairWhite : OfficeChairDoomGreen 12342
+{
+	//$Title Office Chair White
+	Translation "112:127=[192,192,192]:[0,0,0]"
+}
+
+ACTOR OfficeChairGray : OfficeChairDoomGreen 12343
+{
+	//$Title Office Chair Gray
+	Translation "112:127=[128,128,128]:[0,0,0]"
+}
+
+ACTOR OfficeChairRed : OfficeChairDoomGreen 12344
+{
+	//$Title Office Chair Red
+	Translation "112:127=[255,0,0]:[0,0,0]"
+}
+
+ACTOR OfficeChairMaroon : OfficeChairDoomGreen 12345
+{
+	//$Title Office Chair Maroon
+	Translation "112:127=[128,0,0]:[0,0,0]"
+}
+
+ACTOR OfficeChairOlive : OfficeChairDoomGreen 12346
+{
+	//$Title Office Chair Olive
+	Translation "112:127=[128,128,64]:[0,0,0]"
+}
+
+ACTOR OfficeChairGreen : OfficeChairDoomGreen 12347
+{
+	//$Title Office Chair Green
+	Translation "112:127=[0,128,0]:[0,0,0]"
+}
+
+ACTOR OfficeChairPurple : OfficeChairDoomGreen 12348
+{
+	//$Title Office Chair Purple
+	Translation "112:127=[128,0,128]:[0,0,0]"
+}
+
+ACTOR OfficeChairTeal : OfficeChairDoomGreen 12349
+{
+	//$Title Office Chair Teal
+	Translation "112:127=[0,128,128]:[0,0,0]"
+}
+
+ACTOR OfficeChairNavy : OfficeChairDoomGreen 12350
+{
+	//$Title Office Chair Navy
+	Translation "112:127=[0,0,128]:[0,0,0]"
+}
+
+ACTOR OfficeChairBlue : OfficeChairDoomGreen 12351
+{
+	//$Title Office Chair Blue
+	Translation "112:127=[0,0,255]:[0,0,0]"
+}
+
+ACTOR OfficeChairYellow : OfficeChairDoomGreen 12352
+{
+	//$Title Office Chair Yellow
+	Translation "112:127=[255,255,0]:[0,0,0]"
+}
+
+ACTOR OfficeChairCyan : OfficeChairDoomGreen 12353
+{
+	//$Title Office Chair Cyan
+	Translation "112:127=[0,255,255]:[0,0,0]"
+}
+
+ACTOR OfficeChairMagenta : OfficeChairDoomGreen 12354
+{
+	//$Title Office Chair Magenta
+	Translation "112:127=[255,0,255]:[0,0,0]"
+}
+
+//DEFAULT DOOM TRANSLATIONS
+ACTOR OfficeChairDoomGray : OfficeChairDoomGreen 12355
+{
+	//$Title Office Chair Doom Gray
+	Translation 0
+}
+
+ACTOR OfficeChairDoomBrown : OfficeChairDoomGreen 12356
+{
+	//$Title Office Chair Doom Brown
+	Translation 1
+}
+
+ACTOR OfficeChairDoomRed : OfficeChairDoomGreen 12357
+{
+	//$Title Office Chair Doom Red
+	Translation 2
+}
