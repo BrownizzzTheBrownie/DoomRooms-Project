@@ -1,6 +1,7 @@
 DoomEdNums
 {
 	20000 = "PDAReader"
+	30004 = "Magnum"
 }
 
 Gameinfo
@@ -10,5 +11,30 @@ Gameinfo
 	AddEventHandlers = "ShaderHUDHandler"
 	AddEventHandlers = "LeaningHandler"
 	AddEventHandlers = "FlashLightPlusHandler"
-	Playerclasses = "B-TechMarine", "DoomPlayer"
+	Playerclasses = "B-TechMarine", "DoomSlayer","DoomPlayer"
+	//titlemusic = "Musics/Forgotten.ogg"
+ 
+}
+
+//Skills
+clearskills
+
+skill Hard {
+
+	spawnfilter = Hard
+	name = "Brutal"
+	textcolor = "White"
+
+}
+
+skill Nightmare {
+
+	spawnfilter = Nightmare
+	name = "...?"
+	AmmoFactor = 1
+	InstantReaction
+	DisableCheats
+	RespawnTime = 0
+	MustConfirm = "The Difficulty where you will understand the fact that we leave in a cruel world."
+
 }

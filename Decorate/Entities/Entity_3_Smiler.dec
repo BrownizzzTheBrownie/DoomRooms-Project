@@ -1,0 +1,27 @@
+Actor Smiler : actor 1003
+{
+
+	Health 1
+	Speed 4
+	Radius 20
+	Height 30
+	LightLevel 255
+	+Invulnerable
+	States
+	{
+	
+		Spawn:
+			SMIL A 10 A_Look
+			Loop
+	
+		See:
+			SMIL A 1 A_Chase("MeleeAttack")
+			Loop
+			
+		MeleeAttack:
+			SMIL A 1 A_CustomMeleeAttack(20, "", "", Melee, true)
+			goto See
+			
+	}
+
+}

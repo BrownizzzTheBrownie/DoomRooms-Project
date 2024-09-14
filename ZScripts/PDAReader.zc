@@ -44,8 +44,9 @@ class PDAReader : Inventory
 		PDAReader.ShowTutorial true;
 		Inventory.MaxAmount 1;
 		Inventory.PickUpMessage "$PDA_READER_PICKUP";
-		+Inventory.UNDROPPABLE
-		+Inventory.INVBAR
+		+Inventory.UNDROPPABLE;
+		+Inventory.INVBAR;
+		Inventory.Icon "DRBFB0";
 	}
 
 	//===========================================================================

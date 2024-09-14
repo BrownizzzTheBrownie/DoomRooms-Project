@@ -1,0 +1,34 @@
+Statusbar FullScreen, FullScreenOffsets
+{
+	//Bottom Left
+	//Lives from Inventory with Icon
+	//DrawImage "LIFEA0", 14, -1;
+	DrawNumber 16, HUDFONT_DOOM, WHITE, armor,alignment(right), 200, -25;
+
+	//Top Right
+	//Keys
+	DrawKeyBar 2, vertical, 13, -8, 0;
+
+	//Bottom Right
+	//Points Variable from Global Array 0, index PlayerNumber()
+	DrawNumber 8, CONFONT, WHITE, GlobalArray 0 , -2, -25;
+
+	//Ammo and Icon
+	DrawImage AmmoIcon1, -105, -1;
+	DrawNumber 3, SMALLFONT, WHITE, Ammo1, -80, -10;
+	DrawNumber 3, SMALLFONT, WHITE, Ammo2, -80, -20;
+
+	//Health and Icon
+	DrawImage "MEDIA0", 20, -10;
+	DrawNumber 16, HUDFONT_DOOM, WHITE, health,alignment(left), 30, -25;
+	
+	//Sanity Bar
+	Drawstring CONFONT, WHITE, "Sanity", 25, -10, 0, alignment(left);
+	drawbar "SYFG", "SYBG", SanityAmount, horizontal, interpolate(1), 75, -10;
+	//DrawNumber 16, CONFONT, WHITE, SanityAmount/100, alignment(left), 0, 10;
+	
+	//Inventory
+	//DrawSelectedInventory alwaysshowcounter, center, BIGFONT, 0, 0;
+	//DrawInventorybar Doom, alwaysshow, 1, CONFONT, 50, -60;
+	drawinventorybar Doom, alwaysshow, 1, INDEXFONT, 0, 134;
+}

@@ -1,0 +1,2 @@
+switch SW1L0 on sound Switch1 pic SW_1_DN tics 0
+switch SW2L0 off sound Switch2 pic SW_1_UP tics 0

@@ -137,10 +137,10 @@ FPP_NOISE_MIN = "Minimum noise";
 
 PDA_STARTER_KIT_VERSION = "1.1";
 
-PDA_READER = "PDA Reader";
+PDA_READER = "Dr Brown's Folder";
 PDA_PICKUP = "New Data Entry: %s";
 PDA_DEFAULT_TITLE = "[DATA MISSING]";
-PDA_EMPTY = "-NOTHING-";
+PDA_EMPTY = "-NO ENTRY-";
 
 //==============================================================================
 //
@@ -148,8 +148,8 @@ PDA_EMPTY = "-NOTHING-";
 //
 //==============================================================================
 
-PDA_READER_PICKUP = "Picked up a PDA reader.";
-PDA_READER_TUTORIAL = "You picked up a PDA reader! Select it from your inventory bar and press %s to activate it.";
+PDA_READER_PICKUP = "Picked up Dr Brown's folder .";
+PDA_READER_TUTORIAL = "You picked up Dr Brown's folder! Select it from your inventory bar and press %s to activate it.";
 
 //==============================================================================
 //
@@ -300,15 +300,15 @@ PDA_Calln1_Text =
 	"\n\n"
 	"[Brown]: You've reach the 'Doctor', how may I help you ?"
 	"\n\n"
-	"[Owner]: You still trying to win your life. Don't you ?"
+	"[Owner]: Yes, I suspect paranormal activities near in my house at [DATA MISSING]. ?"
 	"\n\n"
-	"[Brown]: Who are you ? And how do you know who am I ?"
+	"[Brown]: Ok, could you tell me more about this activities ?"
 	"\n\n"
-	"[Owner]: Don't seem to recognize an old friend."
+	"[Owner]: I'm am sorry but I can't help you for this."
 	"\n\n"
-	"[Brown]: What do you want ! Even the B-Tech is not enough for you !"
+	"[Brown]: It's fine no worry if you can't tell. Anyway I will come in some time."
 	"\n\n"
-	"[Owner]: Well I need something "
+	"[Owner]:..."
 	"\n\n"
 	"[CALL ENDS]";
 
@@ -336,7 +336,7 @@ PDA_CameraReportn1_Text =
 	"[WARNING FOOTS STEP DETECTED]"
 	"\n\n"
 	"[AUDIO]"
-	"Where did you go, 'Doctor'."
+	"Where did you go, My old friend, I miss-ed you."
 	"\n\n"
 	"[CAMERA 1 OFF]"
 	"\n\n"

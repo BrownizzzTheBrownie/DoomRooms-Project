@@ -126,3 +126,12 @@ https://www.shadertoy.com/view/XsjSzR
 https://www.shadertoy.com/view/MlfSWr
 3) VHS tape effect by Gaktan
 https://www.shadertoy.com/view/Ms3XWH
+
+//Medical BackPack
+Submitted: TheMightyHeracross
+Decorate: TheMightyHeracross
+ACS: Blue Shadow
+Sounds: id Software
+Sprites: id Software
+Sprite Edit: BloodyAcid
+Idea Base: Medical Bag/Medkit from Blood/Duke3d/Shadow Warrior

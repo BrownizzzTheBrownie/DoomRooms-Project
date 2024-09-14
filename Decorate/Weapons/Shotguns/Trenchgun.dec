@@ -1,4 +1,4 @@
-ACTOR Trenchgun : Weapon
+ACTOR Trenchgun : Weapon 30010
 {
     +FLOORCLIP
 	+NOAUTOFIRE

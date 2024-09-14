@@ -1,0 +1,9 @@
+#Include "zcommon.acs"
+
+script "GiveSanity" (void)
+{
+
+	print(s:"Test");
+	GiveInventory("SanityAmount", 200);
+
+}

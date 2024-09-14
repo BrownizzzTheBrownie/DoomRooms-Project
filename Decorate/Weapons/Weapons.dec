@@ -1,5 +1,6 @@
 //Slot1
-
+#Include "Decorate/Weapons/Melee/Fist_Redux.dec"
+#Include "Decorate/Weapons/Melee/Knife.dec"
 
 //Slot2
 #Include "Decorate/Weapons/Pistols/ColtSA.dec"

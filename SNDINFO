@@ -1,3 +1,11 @@
+//Musics
+Forgotten "Musics/Forgotten.ogg"
+CryOfTheUnheard "Musics/CryOfTheUnheard.ogg"
+InTheDark "Musics/InTheDark.ogg"
+
+//Medical BackPack
+FKITUSE FKITUSE
+
 //ColtSA
 ColtClac	COLTCLAC
 COLTClos	COLTClos
@@ -7,6 +15,9 @@ COLTOpen	ColtOpen
 COLTPLOW	COLTPLOW
 COLTDRY 	COLTDRY
 SHBOUNS1	SHBOUNS1
+
+//Fist Redux
+Fist/Swing DSFistGo
 
 //Glock 21
 weapons/glockup GLOKUP
@@ -20,6 +31,11 @@ weapons/glockin	GLOKIN
 92FT 92FT
 92FU 92FU
 $random weapons/HandCannon	{ 92FS 92FT 92FU }
+
+//Knife
+KnifeHitThing DSKNIFE
+KnifeHitWall DSKNIFE3	
+KnifeMiss DSKNIFE2
 
 //MagnumRevolver
 $random Weapons/HeavyPistolFire { HPIST1 HPIST2 HPIST3 }

@@ -4,7 +4,13 @@ next CMPLX
 map CMPLX "The Backrooms"
 next MAP01
 
-
+clearepisodes
 episode INTR0
-
 name "BackRooms...!?"
+
+map TEST "Brownizzz' Acs Learning Map"
+
+episode TEST
+
+name "Acs Learning"
+

@@ -1,4 +1,8 @@
-version "4.10.0"
+version "4.12.0"
+
+//Objects
+#Include "ZScripts/Items/Object1.zs"
+
 
 //PDA
 //#include "ZScripts/PDAZForms/Include.zsc"

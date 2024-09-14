@@ -123,6 +123,7 @@ class Magnum : DoomWeapon
 	NoAmmo:	
 		REVO A 2 A_PlaySound("weapons/empty");
 		REVO BCB 4;
+		Goto Ready;
 	Reload:
 		TNT1 A 0 A_JumpIfInventory("Ammo44",1,1);
 		Goto Ready;

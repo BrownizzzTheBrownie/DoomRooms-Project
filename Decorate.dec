@@ -1,7 +1,33 @@
 #Include "Decorate/Player/Player.dec"
 #Include "Decorate/Weapons/Weapons.dec"
+#Include "Decorate/Entity.dec"
 
 #Include "PDAs/PDAs.dec"
+
+Actor SanityAmount : Inventory
+{
+
+	Inventory.MaxAmount 1000
+	-INVBAR
+	
+
+}
+
+/*Actor SanityDrainer : CustomInventory
+{
+
+	Inventory.Amount -1
+	+Inventory.AUTOACTIVATE
+	
+	States
+	{
+	
+		Use:
+			TNT1 A 0 ACS_NamedExecuteAlways("SanityBar")
+	
+	}
+
+}*/
 
 ACTOR DistanceCheckerCeiling : FastProjectile
 {

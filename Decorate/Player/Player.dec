@@ -9,16 +9,19 @@ Actor B-TechMarine : DoomPlayer
 	PainChance 255
 	+NOBLOOD
 	Player.DisplayName "B-Tech Marine"
-	Player.StartItem "Fist"
+	Player.StartItem "FistRedux"
+	Player.StartItem "Knife"
+	Player.StartItem "SanityAmount", 1000
+	//Player.StartItem "SanityDainer", 1
 	//Player.StartItem "PDA"
 	Player.WeaponSlot 1, FlashLightAngled, FlashlightCentered
-	Player.WeaponSlot 1, Fist, Chainsaw
+	Player.WeaponSlot 1, FistRedux, Knife // Chainsaw
 	Player.WeaponSlot 2, ColtSA, Glock21, HandCannon, UACPistol
-	Player.WeaponSlot 3, Shotgun, SuperShotgun
-	Player.WeaponSlot 4, Chaingun
-	Player.WeaponSlot 5, RocketLauncher
-	Player.WeaponSlot 6, PlasmaRifle
-	Player.WeaponSlot 7, BFG9000
+	//Player.WeaponSlot 3, Shotgun, SuperShotgun
+	//Player.WeaponSlot 4, Chaingun
+	//Player.WeaponSlot 5, RocketLauncher
+	//Player.WeaponSlot 6, PlasmaRifle
+	//Player.WeaponSlot 7, BFG9000
 	Player.RunHealth 20
 	Player.ForwardMove 0.45, 0.5
 	Player.SideMove 0.45, 0.5
