@@ -1,2 +1,2 @@
-switch SW1L0 on sound Switch1 pic SW_1_DN tics 0
-switch SW2L0 off sound Switch2 pic SW_1_UP tics 0
+Switch SW1-LVL0 On Pic SW2-LVL0 Tics 0
+Switch SW2-LVL0 Off Pic SW1-LVL0 Tics 0

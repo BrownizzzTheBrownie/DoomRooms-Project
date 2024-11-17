@@ -12,7 +12,7 @@
 #Include "Decorate/Weapons/Shotguns/Trenchgun.dec"
 
 //Slot4
-
+#Include "Decorate/Weapons/InfantryRifle.dec"
 
 //Slot5
 

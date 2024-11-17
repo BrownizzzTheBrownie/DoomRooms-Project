@@ -19,22 +19,38 @@ Gameinfo
 //Skills
 clearskills
 
-skill Hard {
+skill Normal {
 
 	spawnfilter = Hard
-	name = "Brutal"
+	name = "Human"
 	textcolor = "White"
+	MustConfirm = "You can't undertand..."
+
+}
+
+skill Hard {
+
+	spawnfilter = Nightmare
+	name = "Vanderer"
+	textcolor = "White"
+	AmmoFactor = 1
+	InstantReaction
+	DisableCheats
+	RespawnTime = 0
+	MustConfirm = "...This world..."
 
 }
 
 skill Nightmare {
 
 	spawnfilter = Nightmare
-	name = "...?"
-	AmmoFactor = 1
+	name = "...#@%$!?"
+	textcolor = "White"
+	AmmoFactor = 0.5
+	DamageFactor = 2.0
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "The Difficulty where you will understand the fact that we leave in a cruel world."
+	MustConfirm = "...Is DOOMED, and there is no escape..."
 
 }

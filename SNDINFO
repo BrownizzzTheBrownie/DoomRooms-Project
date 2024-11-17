@@ -70,6 +70,12 @@ weapons/glockdry1 DRY
 DRY DRY
 GOCK GOCK
 
+//Infantry Rifle
+infantry/fire DSM1FR1
+infantry/lastshot DSM1FR2
+infantry/load DSM1LD
+infantry/boltrel DSM1RL
+
 //Default
 flashlightOn    	      "Sounds/BlackMesa_On.ogg"
 flashlightOff             "Sounds/BlackMesa_off.ogg"

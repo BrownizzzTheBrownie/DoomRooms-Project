@@ -5,8 +5,8 @@ class Almond_Water : inventory
 	{
 		Inventory.PickupMessage "Picked up an bottle of almond water.";
 		Inventory.Amount 1;
-		Inventory.MaxAmount 10;
-		Inventory.Icon "OBJ1A0";
+		Inventory.MaxAmount 2;
+		Inventory.Icon "OBJ1B0";
 		+INVENTORY.INVBAR
 	
 	}

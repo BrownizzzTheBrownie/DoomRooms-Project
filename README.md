@@ -118,61 +118,61 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Entity 10 - "Skin-Stealer" => not started
 
 #Unnumbered Entities List
-- Unnumbered Entity - "The Allseer"
-- Unnumbered Entity - "Artificial Light"
-- Unnumbered Entity - "The Conductor"
-- Unnumbered Entity - "Gods of Griots"
-- Unnumbered Entity - "Hymenoptera"
-- Unnumbered Entity - "Hypothetical Creator"
-- Unnumbered Entity - "Icarus Procidens"
-- Unnumbered Entity - "Nostalgi Gaius"
-- Unnumbered Entity - "The Pillars"
+- Unnumbered Entity - "The Allseer" => not started
+- Unnumbered Entity - "Artificial Light" => not started
+- Unnumbered Entity - "The Conductor" => not started
+- Unnumbered Entity - "Gods of Griots" => not started
+- Unnumbered Entity - "Hymenoptera" => not started
+- Unnumbered Entity - "Hypothetical Creator" => not started
+- Unnumbered Entity - "Icarus Procidens" => not started
+- Unnumbered Entity - "Nostalgi Gaius" => not started
+- Unnumbered Entity - "The Pillars" => not started
 
 #Phenomenon List
-- Phenomenon 1 - "Directed Control"
-- Phenomenon 2 - "Blood Moons"
-- Phenomenon 3 - "Happy Dance"
-- Phenomenon 4 - "Spiderposting"
-- Phenomenon 5 - "No-clipping"
-- Phenomenon 6 - "The Nibiru Cataclysm"
-- Phenomenon 7 - "Liminal Echo"
-- Phenomenon 8 - "Doodletrapping"
-- Phenomenon 9 - "The Blue Consumption"
-- Phenomenon 10 - "Avatarhood"
-- Phenomenon 11 - "Backronyms"
-- Phenomenon 12 - "Botanicancer"
-- Phenomenon 13 - "A Way Out"
-- Phenomenon 14 - "Maybe, Maybe Not"
-- Phenomenon 15 - "Inversion"
-- Phenomenon 16 - "Destabilizing Storms"
-- Phenomenon 17 - "Frontrooms Reflection"
-- Phenomenon 18 - "The Infinite Wanderer"
-- Phenomenon 19 - "Radio Waves of the Past"
-- Phenomenon 20 - "Recurring Dreams"
-- Phenomenon 21 - "Respite"
-- Phenomenon 22 - "🪑"
-- Phenomenon 24 - "No-Clip Derailing"
-- Phenomenon 26 - "S.U.N., You Think You're Funny Aren't Ya? Undo This Curse!"
-- Phenomenon 29 - "Whispers"
-- Phenomenon 33 - "Autocorrect"
-- Phenomenon 37 - "Generosity"
-- Phenomenon 43 - "Forbidden Info"
-- Phenomenon 50 - "Vortexes"
-- Phenomenon 54 - "Genesis Delusion"
-- Phenomenon 55 - "GODHAND"
-- Phenomenon 99 - "Forced Immortality"
+- Phenomenon 1 - "Directed Control" => not started
+- Phenomenon 2 - "Blood Moons" => not started
+- Phenomenon 3 - "Happy Dance" => not started
+- Phenomenon 4 - "Spiderposting" => not started
+- Phenomenon 5 - "No-clipping" => not started
+- Phenomenon 6 - "The Nibiru Cataclysm" => not started
+- Phenomenon 7 - "Liminal Echo" => not started
+- Phenomenon 8 - "Doodletrapping" => not started
+- Phenomenon 9 - "The Blue Consumption" => not started
+- Phenomenon 10 - "Avatarhood" => not started
+- Phenomenon 11 - "Backronyms" => not started
+- Phenomenon 12 - "Botanicancer" => not started
+- Phenomenon 13 - "A Way Out" => not started
+- Phenomenon 14 - "Maybe, Maybe Not" => not started
+- Phenomenon 15 - "Inversion" => not started
+- Phenomenon 16 - "Destabilizing Storms" => not started
+- Phenomenon 17 - "Frontrooms Reflection" => not started
+- Phenomenon 18 - "The Infinite Wanderer" => not started
+- Phenomenon 19 - "Radio Waves of the Past" => not started
+- Phenomenon 20 - "Recurring Dreams" => not started
+- Phenomenon 21 - "Respite" => not started
+- Phenomenon 22 - "🪑" => not started
+- Phenomenon 24 - "No-Clip Derailing" => not started
+- Phenomenon 26 - "S.U.N., You Think You're Funny Aren't Ya? Undo This Curse!" => not started
+- Phenomenon 29 - "Whispers" => not started
+- Phenomenon 33 - "Autocorrect" => not started
+- Phenomenon 37 - "Generosity" => not started
+- Phenomenon 43 - "Forbidden Info" => not started
+- Phenomenon 50 - "Vortexes" => not started
+- Phenomenon 54 - "Genesis Delusion" => not started
+- Phenomenon 55 - "GODHAND" => not started
+- Phenomenon 99 - "Forced Immortality" => not started
 
 #Objects List
-- Object 1 - "Almond Water"
-- Object 2 - "Level Key"
+- Object 1 - "Almond Water" => implemented
+- Object 2 - "Level Key" => not started
 - Object 3 - "Smiler Repellent" => Wiki revision
-- Object 4 - "Deuclidators"
-- Object 5 - "Candy"
-- Object 6 - "The Mirror"
-- Object 7 - "Memory Jar"
-- Object 8 - "Lamps"
-- Object 9 - "Dumb Gum" (They bleed onto the desert ever so nicely)
-- Object 10 - "Scarecrows"
+- Object 4 - "Deuclidators" => not started
+- Object 5 - "Candy" => not started
+- Object 6 - "The Mirror" => not started
+- Object 7 - "Memory Jar" => not started
+- Object 8 - "Lamps" => not started
+- Object 9 - "Dumb Gum" (They bleed onto the desert ever so nicely) => not started
+- Object 10 - "Scarecrows" => not started
 
 
 #P.O.I. (Person of Interest) List

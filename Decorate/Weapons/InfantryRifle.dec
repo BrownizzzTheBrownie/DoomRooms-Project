@@ -1,0 +1,150 @@
+//The sprite is an edit of the WW2GI M1 Garand, if you can believe it!
+actor InfantryRifle : Weapon 30005
+{
+	Inventory.Pickupmessage "You got the Infantry Rifle!"
+	Obituary "%o was blasted to bits by %k."
+	Weapon.Ammotype "Ammo30"
+	Weapon.Ammotype2 "InfantryClip"
+	Decal "Bulletchip"
+	Weapon.SlotNumber 3
+	Weapon.Ammogive 16
+	Weapon.ammouse1 0
+	Weapon.ammouse2 0
+	States
+	{
+	
+	Spawn:
+		GARP A -1
+		stop
+	
+	Ready:
+		M1GR A 1 A_WeaponReady(WRF_ALLOWRELOAD) //for simplicity's sake, the weapon can't be reloaded normally, i just didn't feel like animating a partial reload tbh
+		Loop
+		
+	Deselect:
+		M1GR A 1 A_Lower
+		Loop
+		
+	Select:
+		M1GR A 1 A_Raise
+		Loop
+		
+	Fire:
+		TNT1 A 0 A_JumpifInventory("InfantryClip",1,1) //lock the bolt open on the last shot
+		goto Ready			
+		TNT1 A 0 A_JumpifInventory("InfantryClip",2,1) //lock the bolt open on the last shot
+		goto Finalshot
+		M1GR B 1 BRIGHT OFFSET(0,38)
+		TNT1 A 0 A_Playsound("infantry/fire",CHAN_WEAPON) //pow!
+		TNT1 A 0 A_Takeinventory("InfantryClip",1,TIF_NOTAKEINFINITE)
+		TNT1 A 0 A_FireBullets (2, 2, 1, 25, "InfantryPuff") //fairly accurate with decent damage, faster rate of fire than default shotgun		
+		M1GR C 1 OFFSET(0,40)
+		M1GR C 2 OFFSET(0,38)
+		M1GR A 2 OFFSET(0,36)
+		M1GR A 2 OFFSET(0,34)
+		M1GR A 2 OFFSET(0,32)
+		M1GR A 8
+		M1GR A 2 A_ReFire
+		Goto Ready
+	
+	FinalShot:
+		M1GR B 1 BRIGHT OFFSET(0,38)
+		TNT1 A 0 A_Playsound("infantry/lastshot",CHAN_WEAPON) //pow-ping!
+		TNT1 A 0 A_Takeinventory("InfantryClip",1,TIF_NOTAKEINFINITE)
+		TNT1 A 0 A_FireBullets (2, 2, 1, 25, "InfantryPuff")		
+		M1GR C 1 OFFSET(0,40) //bolt locks open on last shot
+		M1GR C 2 OFFSET(0,38)
+		M1GR C 2 OFFSET(0,36)
+		M1GR C 2 OFFSET(0,34)
+		M1GR C 2 OFFSET(0,32)
+		Goto Ready	
+	
+	Reload:
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 8, "Ready") //If the gun is full, don't reload
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 7, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 6, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 5, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 4, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 3, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 2, "Ready")
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 1, "Ready")
+		TNT1 A 0 A_JumpIfInventory("Ammo30", 1, 1) //If you have no leftover ammo, don't reload
+		Goto Reload
+		M1GR C 2
+		M1GR D 2
+		M1GR E 2 Offset(0,32)
+		M1GR F 2 Offset(0,34)
+
+		/*oh boy, we're pulling out the rube-goldberg machine method, so i'm gonna explain this before we continue: 
+		
+		the idea here essentially is to have a check that loads ammo based on the capacity in the clip,
+		remove up to 8 from the total ammo pool but check if there's less than 8 total, and if there's no ammo, don't
+		perform the animation. if you fill "gimmebullets" with frames, it loops the frames over and over again.
+		if it has no frames inside that take up a specific amount of tics, it performs this action instantly.
+		*/
+		
+	ReloadRepeat:
+		TNT1 A 0 A_JumpIfInventory("InfantryClip", 8, "ReloadFinish")
+		TNT1 A 0 A_JumpIfInventory("Ammo30", 1, 1)
+		Goto ReloadFinish
+		TNT1 A 0 A_GiveInventory("InfantryClip", 1)
+		TNT1 A 0 A_Takeinventory("Ammo30",1)	
+		Goto ReloadRepeat
+		
+	ReloadFinish: //the rest of the animation
+		TNT1 A 0 A_Playsound("infantry/load",CHAN_AUTO)
+		M1GR G 2 Offset(0,40) //pushed down for a moment
+		M1GR G 2 Offset(0,39)
+		M1GR G 2 Offset(0,38)
+		TNT1 A 0 A_Playsound("infantry/boltrel",CHAN_AUTO)
+		M1GR H 2 Offset(0,36) //bolt goes forward after moving
+		M1GR I 2 Offset(0,34)
+		M1GR A 2 Offset(0,32)
+		M1GR A 4
+		goto ready
+		
+	}
+
+}
+
+actor InfantryPuff : Bulletpuff
+{
++NOEXTREMEDEATH //custom bulletpuff so the gun doesn't gib enemies by shooting them once
+}
+
+actor InfantryClip : Ammo
+{
+
+Inventory.Maxamount 8
+
+}
+
+actor Ammo30 : Ammo //in reference to the 30.06 cartridge, the ammo type is called "ammo30"
+{
+	Inventory.PickupMessage "Got an infantry clip."
+	Inventory.Amount 8 //8-round enblock clip
+	Inventory.MaxAmount 48
+	Ammo.BackpackAmount 8
+	Ammo.BackpackMaxAmount 96
+	Inventory.Icon "M1CLA0"
+	States
+	{
+		Spawn:
+			M1CL A -1
+			Stop
+	}
+}
+
+actor Ammo30Box : Ammo30 //ammo box based on the m19a1 ammo can
+{
+	Inventory.PickupMessage "Got a box of infantry clips."
+	Inventory.Amount 24
+	
+	States
+	{
+		Spawn:
+			M1CL B -1
+			stop
+	}
+
+}
