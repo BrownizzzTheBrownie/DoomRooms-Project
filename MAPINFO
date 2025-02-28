@@ -1,13 +1,11 @@
 DoomEdNums
 {
-	20000 = "PDAReader"
 	30004 = "Magnum"
 }
 
 Gameinfo
 {
 	AddEventHandlers = "ShaderHandler"
-	AddEventHandlers = "PDAEventHandler"
 	AddEventHandlers = "ShaderHUDHandler"
 	AddEventHandlers = "LeaningHandler"
 	AddEventHandlers = "FlashLightPlusHandler"

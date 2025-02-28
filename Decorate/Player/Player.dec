@@ -13,8 +13,6 @@ Actor B-TechMarine : DoomPlayer
 	Player.StartItem "Knife"
 	Player.StartItem "SanityAmount", 1000
 	//Player.StartItem "SanityDainer", 1
-	//Player.StartItem "PDA"
-	Player.WeaponSlot 1, FlashLightAngled, FlashlightCentered
 	Player.WeaponSlot 1, FistRedux, Knife // Chainsaw
 	Player.WeaponSlot 2, ColtSA, Glock21, HandCannon, UACPistol
 	//Player.WeaponSlot 3, Shotgun, SuperShotgun

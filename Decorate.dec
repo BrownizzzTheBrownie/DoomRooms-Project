@@ -2,7 +2,6 @@
 #Include "Decorate/Weapons/Weapons.dec"
 #Include "Decorate/Entity.dec"
 
-#Include "PDAs/PDAs.dec"
 
 Actor SanityAmount : Inventory
 {
