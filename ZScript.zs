@@ -4,23 +4,11 @@ version "4.12.0"
 #Include "ZScripts/Items/Object1.zs"
 
 
-//PDA
-//#include "ZScripts/PDAZForms/Include.zsc"
-//#include "ZScripts/PDAMenuElements.zc"
-//#include "ZScripts/PDAMenu.zc"
-//#include "ZScripts/PDAConfig.zc"
-//#include "ZScripts/PDAMenuHandler.zc"
-//#include "ZScripts/PDAEventHandler.zc"
-//#include "ZScripts/PDAReader.zc"
-//#include "ZScripts/PDAReaderTutorialMenu.zc"
-//#include "ZScripts/PDA.zc"
-//#include "ZScripts/PDADummyPDA.zc"
-
 //CRT Shader
 #Include "ZSCripts/Shaders.zsc"
 
 //Lean
-//#Inlcude "ZSCripts/Lean.zs"
+#Inlcude "ZSCripts/Lean.zs"
 
 //Flashlight ++
 #include "ZScripts/FPP_Holder.zs"
