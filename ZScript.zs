@@ -8,7 +8,7 @@ version "4.12.0"
 #Include "ZSCripts/Shaders.zsc"
 
 //Lean
-#Inlcude "ZSCripts/Lean.zs"
+#Include "ZSCripts/Lean.zs"
 
 //Flashlight ++
 #include "ZScripts/FPP_Holder.zs"
@@ -57,7 +57,7 @@ Class BulletCasing : Actor
 	}
 }
 
-class LeaningHandler : EventHandler
+/*class LeaningHandler : EventHandler
 {
 	const LEAN_FORCE = 12.0;
 	
@@ -220,4 +220,4 @@ class LeaningHandler : EventHandler
 				player.Thrust(LEAN_FORCE, player.angle + 90.0);
 		}
 	}
-}
+}*/
