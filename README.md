@@ -1,6 +1,11 @@
 # DoomRooms
 a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http://backrooms-wiki.wikidot.com/ ). If you want to help me for idk reasons or to chat about this project, my discord: brownizzz #BrownizzzTheBrownie (A server will be made later, maybe when Level 0 will be finished maybe not) => https://discord.gg/XXXXXXXXXX
 
+#Setup
+- Get GZDoom (from official website: https://zdoom.org/downloads, or from the github: https://github.com/ZDoom/gzdoom/releases)
+- Get Doom 2 wad from Steam, or get Freedoom 2 if you don't want to buy: https://freedoom.github.io/download.html (put the .wad file in the same folder as gzdoom.exe)
+- Download the file as a zip (click code, then download zip)
+- Drag and drop the zip to gzdoom.exe to run the mod or you can use a launcher (for exemple ZDL...)
 
 #Goal for now
 - Finish the Intro maps + the 9 first Backrooms level with their subs-level => uncomplete
