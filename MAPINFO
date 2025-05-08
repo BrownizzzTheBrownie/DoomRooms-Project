@@ -1,6 +1,7 @@
 DoomEdNums
 {
 	30004 = "Magnum"
+	30101 = "Almond_Water"
 }
 
 Gameinfo
@@ -35,7 +36,7 @@ skill Hard {
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "...This world..."
+	MustConfirm = "...a doomed world's..."
 
 }
 
@@ -49,6 +50,6 @@ skill Nightmare {
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "...Is DOOMED, and there is no escape..."
+	MustConfirm = "...and..."
 
 }

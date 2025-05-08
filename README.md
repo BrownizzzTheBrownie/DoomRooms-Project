@@ -28,7 +28,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 #Entities
 - Entity 1 - "The Humans" => Here
 - Entity 2 - "The Windows" => not started
-- Entity 3 - "Smiler" => not started
+- Entity 3 - "Smiler" => sprite but without proper behavior
 - Entity 4 - "Deathmoths" => not started
 - Entity 5 - "Clump" => not started
 - Entity 6 - "Dullers" => not started
