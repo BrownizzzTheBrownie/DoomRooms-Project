@@ -4,7 +4,7 @@ version "4.12.0"
 #Include "ZScripts/Items/Object1.zs"
 
 
-//CRT Shader
+//CRT Shader replaced with CRT-VHS Shader
 #Include "ZSCripts/Shaders.zsc"
 
 //Lean
