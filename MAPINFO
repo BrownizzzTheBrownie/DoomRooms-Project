@@ -10,7 +10,7 @@ Gameinfo
 	AddEventHandlers = "ShaderHUDHandler"
 	AddEventHandlers = "LeaningHandler"
 	AddEventHandlers = "FlashLightPlusHandler"
-	Playerclasses = "B-TechMarine", "DoomSlayer","DoomPlayer"
+	Playerclasses = "B-TechMarine", "DoomSlayer","DoomPlayer", "TestPlayer"
 	//titlemusic = "Musics/Forgotten.ogg"
  
 }
