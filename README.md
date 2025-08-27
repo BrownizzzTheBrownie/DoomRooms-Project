@@ -45,4 +45,4 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 #Unofficial things
 
 #P.O.I.
-- "The Doctor" Browny alias [NO DATA]
+- "The Doctor" alias [NO DATA]

@@ -1,3 +1,5 @@
+server bool tp_show_notes = true;
+
 user bool LR_lowhealth = true;
 user bool LR_invul = true;
 
