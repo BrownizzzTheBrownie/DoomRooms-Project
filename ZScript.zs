@@ -6,8 +6,8 @@ version "4.14.1"
 #Include "ZScripts/Items/Object1.zs"
 
 //ZForms
-#Include "DRP_ZForms/Include.zsc"
-#Include "ZScripts/NewInv.zs"
+//#Include "DRP_ZForms/Include.zsc"
+//#Include "ZScripts/NewInv.zs"
 
 //CRT Shader replaced with CRT-VHS Shader
 #Include "ZSCripts/Shaders.zsc"

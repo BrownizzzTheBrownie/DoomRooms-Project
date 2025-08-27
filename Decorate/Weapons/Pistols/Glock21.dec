@@ -1,4 +1,4 @@
-ACTOR Glock21 : Weapon 30000
+ACTOR Glock21 : Weapon
 {
     Inventory.PickupSound "misc/w_pkup"
     Inventory.PickupMessage "You got the Glock 21!"

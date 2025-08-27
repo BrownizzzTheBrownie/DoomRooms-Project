@@ -12,6 +12,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 - Do the basic entiies => basic smiler for now with no a proper behavior
 - Implement a basic sanity bar => base finished with item n°1 - Almond Water 
 - Make a PDA (idk how, for now I remove PDA until I figured out how to make my own)
+- Implement a new Inventory system => Guess not since gearbox include what I need so...
 
 #Progression
 

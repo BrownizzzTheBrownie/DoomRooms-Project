@@ -1,6 +1,7 @@
 DoomEdNums
 {
 	30004 = "Magnum"
+	//30000 = "InvBackpack"
 	30101 = "Almond_Water"
 }
 
@@ -10,7 +11,7 @@ Gameinfo
 	AddEventHandlers = "ShaderHUDHandler"
 	AddEventHandlers = "LeaningHandler"
 	AddEventHandlers = "FlashLightPlusHandler"
-	EventHandlers = "NewInvEvent"
+	//EventHandlers = "NewInvEvent"
 	Playerclasses = "B-TechMarine", "DoomSlayer","DoomPlayer", "TestPlayer"
 	//titlemusic = "Musics/Forgotten.ogg"
  
@@ -24,7 +25,7 @@ skill Normal {
 	spawnfilter = Hard
 	name = "Human"
 	textcolor = "White"
-	MustConfirm = "You can't undertand..."
+	MustConfirm = "Don't lose Hope."
 
 }
 
@@ -37,7 +38,7 @@ skill Hard {
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "...a doomed world's..."
+	MustConfirm = "Your Fate is Sealed."
 
 }
 
@@ -51,6 +52,6 @@ skill Nightmare {
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "...and..."
+	MustConfirm = "[DATA MISSING]"
 
 }

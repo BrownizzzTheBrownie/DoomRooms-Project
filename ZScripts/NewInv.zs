@@ -1,3 +1,43 @@
+class InvBackpack : Inventory
+{
+
+	Default
+	{
+	
+		Inventory.MaxAmount 1;
+		Inventory.Icon "CBPKB0";
+		+Inventory.UNDROPPABLE
+		+Inventory.INVBAR
+	
+	}
+	
+	override bool Use(bool pickup)
+	{
+	
+		if (!Owner) return true;
+		
+		if (Owner == players[consoleplayer].mo)
+		{
+		
+			Menu.setMenu("NewInv");
+		
+		}
+		
+		return false;
+	
+	}
+	
+	States
+	{
+	
+		Spawn:
+			CBPK A -1;
+			stop;
+	
+	}
+
+}
+
 class NewInvHandler : DRP_ZF_Handler
 {
 
