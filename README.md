@@ -3,7 +3,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 
 #Setup
 - Get GZDoom (from official website: https://zdoom.org/downloads, or from the github: https://github.com/ZDoom/gzdoom/releases)
-- Get Doom 2 wad from Steam, or get Freedoom 2 if you don't want to buy: https://freedoom.github.io/download.html (put the .wad file in the same folder as gzdoom.exe)
+- Get Doom 2 wad from Steam, or get Freedoom 2 if you don't want to buy: https://freedoom.github.io/download.html (put the .wad file in the same folder as gzdoom.exe), This mod may become a total conversion in the future.
 - Download the file as a zip (click code, then download zip)
 - Drag and drop the zip to gzdoom.exe to run the mod or you can use a launcher (for exemple ZDL...)
 
@@ -17,7 +17,7 @@ a mod by Brownizzz for doom based on the Backrooms (mostly on the wikidot: http:
 #Progression
 
 #Levels
-- Intro Level - "BrownTech β Labs" => almost finished
+- Intro Level - "BrownTech β Labs" => almost finished + some polish
 - Level 0 - "Tutorial Level" => not finished
     - Level 0.1 - "Zenith Sation" => not started
     - Level 0.2 - "Remodeled Mess" => not started
