@@ -14,6 +14,7 @@ Gameinfo
 	//EventHandlers = "NewInvEvent"
 	Playerclasses = "B-TechMarine", "DoomSlayer","DoomPlayer", "TestPlayer"
 	//titlemusic = "Musics/Forgotten.ogg"
+	StatusBarClass = "DRP_HUD"
  
 }
 
@@ -25,7 +26,7 @@ skill Normal {
 	spawnfilter = Hard
 	name = "Human"
 	textcolor = "White"
-	MustConfirm = "Don't lose Hope."
+	MustConfirm = "[Don't] Lose Hope."
 
 }
 
@@ -38,7 +39,7 @@ skill Hard {
 	InstantReaction
 	DisableCheats
 	RespawnTime = 0
-	MustConfirm = "Your Fate is Sealed."
+	MustConfirm = "Your Fate is [Sealed]."
 
 }
 

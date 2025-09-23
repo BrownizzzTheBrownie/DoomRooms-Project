@@ -30,3 +30,21 @@ HardwareShader PostProcess Screen
 	Uniform float 	contrast
 	Uniform float 	saturation
 }
+
+brightmap texture CEILING0
+{
+  map "Brightmaps/Textures/CEILING0.png"
+}
+
+Glow
+{
+
+	Flats
+	{
+	
+		CEILING0
+	
+	}
+	Texture CEILING0, FFFFFF
+
+}
